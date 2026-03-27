@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proposta Comercial — Walter Enoré | Agência Avestra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    :root { --accent-blue: #5070b0; --accent-blue-glow: rgba(80, 112, 176, 0.5); }
+    * { scroll-behavior: smooth; }
+    @keyframes fade-in-up { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes border-spin { from { --gradient-angle: 0deg; } to { --gradient-angle: 360deg; } }
+    @keyframes shimmer { from { transform: translate(-50%, -50%) rotate(0deg); } to { transform: translate(-50%, -50%) rotate(360deg); } }
+    @keyframes animStar { from { transform: translateY(0px); } to { transform: translateY(-2000px); } }
+    @keyframes pulse-glow { 0%, 100% { box-shadow: 0 0 20px rgba(80, 112, 176, 0.2); } 50% { box-shadow: 0 0 40px rgba(80, 112, 176, 0.4); } }
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+    @keyframes count-up { from { opacity: 0; transform: scale(0.5); } to { opacity: 1; transform: scale(1); } }
+    @keyframes slide-in-left { from { opacity: 0; transform: translateX(-40px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes slide-in-right { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }
+    @property --gradient-angle { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
+    .animate-fade-up { animation: fade-in-up 0.8s ease-out forwards; opacity: 0; }
+    .font-manrope { font-family: 'Manrope', sans-serif; }
+    .font-inter { font-family: 'Inter', sans-serif; }
+    .shiny-cta { --gradient-angle: 0deg; position: relative; overflow: hidden; border-radius: 9999px; padding: 1rem 2.5rem; background: linear-gradient(#000000, #000000) padding-box, conic-gradient(from var(--gradient-angle), transparent 0%, #5070b0 5%, #5070b0 15%, #5070b0 30%, transparent 40%, transparent 100%) border-box; border: 2px solid transparent; cursor: pointer; isolation: isolate; animation: border-spin 2.5s linear infinite; }
+    .shiny-cta::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, white 0.5px, transparent 0); background-size: 4px 4px; opacity: 0.1; z-index: 0; }
+    .stars-1 { box-shadow: 234px 124px #fff, 654px 345px #fff, 876px 12px #fff, 1200px 800px #fff, 400px 1500px #fff, 1800px 200px #fff, 100px 1000px #fff, 900px 1900px #fff, 500px 600px #fff, 1400px 100px #fff, 300px 400px #fff, 1600px 1200px #fff, 50px 300px #fff, 750px 1100px #fff, 1100px 1600px #fff, 1700px 700px #fff, 200px 1800px #fff, 950px 50px #fff; }
+    .stars-2 { box-shadow: 123px 456px #fff, 789px 234px #fff, 456px 890px #fff, 1100px 300px #fff, 200px 1200px #fff, 1500px 500px #fff, 600px 1700px #fff, 1300px 900px #fff, 350px 750px #fff, 850px 1400px #fff, 1650px 1050px #fff; }
+    .stars-3 { box-shadow: 50px 50px rgba(80,112,176,0.3), 800px 400px rgba(80,112,176,0.2), 1400px 1000px rgba(80,112,176,0.25), 300px 1300px rgba(80,112,176,0.15), 1000px 200px rgba(80,112,176,0.2); }
+    .gradient-blur { position: fixed; z-index: 40; inset: 0 0 auto 0; height: 120px; pointer-events: none; background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent); backdrop-filter: blur(8px); mask-image: linear-gradient(to bottom, black, transparent); }
+    .selection-blue::selection { background: #5070b0; color: white; }
+    .text-stroke { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1); color: transparent; }
+    .pilar-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    .pilar-card:hover { transform: translateY(-4px); border-color: rgba(80, 112, 176, 0.3); }
+    .timeline-line { position: relative; }
+    .timeline-line::before { content: ''; position: absolute; left: 24px; top: 60px; bottom: -20px; width: 2px; background: linear-gradient(to bottom, #5070b0, transparent); }
+    .timeline-line:last-child::before { display: none; }
+    .price-slash { position: relative; }
+    .price-slash::after { content: ''; position: absolute; left: -5%; top: 50%; width: 110%; height: 3px; background: #5070b0; transform: rotate(-8deg); }
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1); }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    .glow-number { text-shadow: 0 0 30px rgba(80, 112, 176, 0.5), 0 0 60px rgba(80, 112, 176, 0.2); }
+    .metric-card { background: linear-gradient(135deg, rgba(80, 112, 176, 0.05), transparent); }
+    .section-divider { background: linear-gradient(90deg, transparent, rgba(80, 112, 176, 0.3), transparent); height: 1px; }
+    .compare-table td, .compare-table th { padding: 12px 16px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 13px; }
+    .compare-table th { color: #5070b0; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; font-size: 10px; }
+    .compare-table .bad { color: #ef4444; } .compare-table .good { color: #22c55e; }
+    ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: #000; } ::-webkit-scrollbar-thumb { background: #5070b0; border-radius: 3px; }
+    @media (max-width: 768px) { .pilares-grid { grid-template-columns: 1fr !important; } }
+    html { font-family: 'Inter', sans-serif; }
+    body { background: #000; color: #fff; overflow-x: hidden; }
+  </style>
+</head>
+<body class="selection-blue font-inter">
+
+  <!-- ========== BACKGROUND FIXO ========== -->
+  <div class="fixed inset-0 z-0 pointer-events-none">
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0a1128] to-black"></div>
+    <div class="w-[1px] h-[1px] bg-transparent stars-1 animate-[animStar_50s_linear_infinite] absolute top-0 left-0"></div>
+    <div class="w-[2px] h-[2px] bg-transparent stars-2 animate-[animStar_80s_linear_infinite] absolute top-0 left-0"></div>
+    <div class="w-[3px] h-[3px] bg-transparent stars-3 animate-[animStar_120s_linear_infinite] absolute top-0 left-0"></div>
+    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/5 rounded-full blur-[120px]"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+  </div>
+
+  <!-- ========== TOP BLUR ========== -->
+  <div class="gradient-blur"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="fixed top-5 left-0 right-0 z-50 flex justify-center px-4">
+    <div class="max-w-5xl w-full mx-auto px-6 py-3 bg-black/60 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-between">
+      <span class="font-manrope font-bold text-white text-sm tracking-tight">
+        <span class="text-[#5070b0]">AV</span>ESTRA
+      </span>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="#diagnostico" class="text-zinc-400 hover:text-white text-xs font-inter transition-colors duration-200">Diagnóstico</a>
+        <a href="#solucao" class="text-zinc-400 hover:text-white text-xs font-inter transition-colors duration-200">Solução</a>
+        <a href="#cronograma" class="text-zinc-400 hover:text-white text-xs font-inter transition-colors duration-200">Cronograma</a>
+        <a href="#investimento" class="text-zinc-400 hover:text-white text-xs font-inter transition-colors duration-200">Investimento</a>
+      </div>
+      <a href="https://calendly.com/marketingavestra/30min" target="_blank"
+        class="shiny-cta text-white font-manrope font-semibold text-xs flex items-center gap-2 no-underline"
+        style="padding: 0.5rem 1.2rem;">
+        <iconify-icon icon="lucide:calendar" width="14"></iconify-icon>
+        <span style="position:relative;z-index:1;">Agendar</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-20">
+    <div class="max-w-4xl mx-auto text-center">
+
+      <!-- Badge animado -->
+      <div class="animate-fade-up inline-flex items-center gap-2 bg-[#5070b0]/10 border border-[#5070b0]/30 rounded-full px-4 py-2 mb-8">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#5070b0] opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-[#5070b0]"></span>
+        </span>
+        <span class="text-[#5070b0] text-xs font-inter font-medium uppercase tracking-widest">Proposta Exclusiva — Confidencial</span>
+      </div>
+
+      <!-- Título principal -->
+      <h1 class="font-manrope font-semibold tracking-tighter text-5xl md:text-7xl leading-tight mb-6" style="animation: fade-in-up 0.8s ease-out 0.2s forwards; opacity: 0;">
+        <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">
+          De Advogado Invisível<br>a
+        </span>
+        <span class="relative inline-block ml-3">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Referência</span>
+          <svg class="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 6C40 2 80 1 100 3C120 5 160 6 198 4" stroke="#5070b0" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+          </svg>
+        </span>
+        <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">
+          <br>em Cuiabá
+        </span>
+      </h1>
+
+      <!-- Nome em destaque -->
+      <div class="font-manrope font-bold text-3xl md:text-4xl mb-4" style="animation: fade-in-up 0.8s ease-out 0.35s forwards; opacity: 0;">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] via-[#7090d0] to-[#5070b0]">Walter Enoré</span>
+      </div>
+
+      <!-- Subtítulo -->
+      <p class="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed font-inter font-light" style="animation: fade-in-up 0.8s ease-out 0.5s forwards; opacity: 0;">
+        Uma análise completa revelou onde você está perdendo clientes agora — e um plano concreto para mudar isso nos próximos 30 dias.
+      </p>
+
+      <!-- Linha de meta informações -->
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-10 text-xs font-inter text-zinc-500" style="animation: fade-in-up 0.8s ease-out 0.6s forwards; opacity: 0;">
+        <span class="flex items-center gap-1.5">
+          <iconify-icon icon="lucide:user" width="12" class="text-[#5070b0]"></iconify-icon>
+          Para: Walter Enoré
+        </span>
+        <span class="text-zinc-700">•</span>
+        <span class="flex items-center gap-1.5">
+          <iconify-icon icon="lucide:building-2" width="12" class="text-[#5070b0]"></iconify-icon>
+          De: Agência Avestra
+        </span>
+        <span class="text-zinc-700">•</span>
+        <span class="flex items-center gap-1.5">
+          <iconify-icon icon="lucide:calendar" width="12" class="text-[#5070b0]"></iconify-icon>
+          Junho de 2025
+        </span>
+        <span class="text-zinc-700">•</span>
+        <span class="flex items-center gap-1.5 text-amber-400/80">
+          <iconify-icon icon="lucide:clock" width="12"></iconify-icon>
+          Válida por 7 dias
+        </span>
+      </div>
+
+      <!-- CTA Hero -->
+      <div style="animation: fade-in-up 0.8s ease-out 0.75s forwards; opacity: 0;">
+        <a href="#diagnostico" class="shiny-cta inline-flex items-center gap-3 text-white font-manrope font-semibold text-base no-underline">
+          <span style="position:relative;z-index:1;">Ver Proposta Completa</span>
+          <iconify-icon icon="lucide:arrow-right" width="18" style="position:relative;z-index:1;"></iconify-icon>
+        </a>
+      </div>
+
+      <!-- Quote -->
+      <div class="mt-16 max-w-2xl mx-auto border border-[#5070b0]/20 rounded-2xl p-6 bg-[#5070b0]/5 backdrop-blur-sm" style="animation: fade-in-up 0.8s ease-out 0.9s forwards; opacity: 0;">
+        <p class="text-zinc-300 font-manrope font-light text-base italic leading-relaxed">
+          "Você tem o conhecimento. Tem até uma audiência construída. O que falta é uma estrutura que trabalhe por você enquanto você está dentro do fórum."
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO DIAGNÓSTICO ========== -->
+  <section id="diagnostico" class="relative z-10 py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="section-divider mb-16 reveal"></div>
+
+      <!-- Label -->
+      <div class="reveal">
+        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">01 — Diagnóstico</span>
+      </div>
+
+      <!-- Título -->
+      <div class="mt-4 mb-4 reveal">
+        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
+          O Que os Números<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Revelam Sobre Você</span>
+        </h2>
+      </div>
+
+      <p class="text-zinc-400 font-inter text-base max-w-2xl mb-14 leading-relaxed reveal">
+        Fizemos uma análise completa da sua presença digital antes de chegar até você. O que encontramos precisa ser dito com clareza — porque você merece saber exatamente onde está perdendo clientes agora, hoje.
+      </p>
+
+      <!-- Metric Cards -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        <div class="metric-card border border-[#5070b0]/20 rounded-2xl p-6 text-center reveal" style="animation: pulse-glow 3s ease-in-out infinite;">
+          <div class="glow-number font-manrope font-bold text-5xl text-[#5070b0] mb-2">12</div>
+          <div class="text-zinc-400 font-inter text-xs uppercase tracking-wider">Pontuação Digital<br><span class="text-zinc-600">de 100</span></div>
+        </div>
+        <div class="metric-card border border-[#5070b0]/20 rounded-2xl p-6 text-center reveal">
+          <div class="glow-number font-manrope font-bold text-5xl text-[#5070b0] mb-2">0</div>
+          <div class="text-zinc-400 font-inter text-xs uppercase tracking-wider">Presença<br>no Google</div>
+        </div>
+        <div class="metric-card border border-[#5070b0]/20 rounded-2xl p-6 text-center reveal">
+          <div class="glow-number font-manrope font-bold text-4xl text-[#5070b0] mb-2">2.576</div>
+          <div class="text-zinc-400 font-inter text-xs uppercase tracking-wider">Seguidores<br>Desperdiçados</div>
+        </div>
+        <div class="metric-card border border-[#5070b0]/20 rounded-2xl p-6 text-center reveal">
+          <div class="glow-number font-manrope font-bold text-5xl text-[#5070b0] mb-2">0</div>
+          <div class="text-zinc-400 font-inter text-xs uppercase tracking-wider">Leads<br>Rastreáveis</div>
+        </div>
+      </div>
+
+      <!-- Problem Cards -->
+      <div class="grid md:grid-cols-3 gap-6 mb-10">
+
+        <!-- Problem 1 -->
+        <div class="border border-red-500/20 bg-red-950/10 rounded-2xl p-6 reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0">
+              <iconify-icon icon="lucide:x" width="16" class="text-red-400"></iconify-icon>
+            </div>
+            <span class="text-red-400 font-inter font-semibold text-sm">Problema Crítico</span>
+          </div>
+          <h3 class="font-manrope font-bold text-white text-lg mb-3">Você não existe no Google</h3>
+          <p class="text-zinc-400 font-inter text-sm leading-relaxed">
+            Seu <strong class="text-white">Google Meu Negócio não está cadastrado</strong>. Quando alguém em Cuiabá busca ajuda de um advogado de família, ela encontra seus concorrentes. Não você.
+          </p>
+          <div class="mt-4 pt-4 border-t border-red-500/10">
+            <span class="text-red-400 text-xs font-inter font-medium">Buscas perdidas por dia →</span>
+            <span class="text-white text-xs font-inter font-bold ml-1">dezenas</span>
+          </div>
+        </div>
+
+        <!-- Problem 2 -->
+        <div class="border border-red-500/20 bg-red-950/10 rounded-2xl p-6 reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0">
+              <iconify-icon icon="lucide:x" width="16" class="text-red-400"></iconify-icon>
+            </div>
+            <span class="text-red-400 font-inter font-semibold text-sm">Problema Crítico</span>
+          </div>
+          <h3 class="font-manrope font-bold text-white text-lg mb-3">Sem site, sem endereço digital</h3>
+          <p class="text-zinc-400 font-inter text-sm leading-relaxed">
+            Nenhum site ou landing page vinculado ao seu nome. Sem isso, <strong class="text-white">não há como ranquear no Google</strong> nem como o cliente dar o próximo passo com você.
+          </p>
+          <div class="mt-4 pt-4 border-t border-red-500/10">
+            <span class="text-red-400 text-xs font-inter font-medium">Credibilidade perdida →</span>
+            <span class="text-white text-xs font-inter font-bold ml-1">toda semana</span>
+          </div>
+        </div>
+
+        <!-- Problem 3 -->
+        <div class="border border-red-500/20 bg-red-950/10 rounded-2xl p-6 reveal">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0">
+              <iconify-icon icon="lucide:x" width="16" class="text-red-400"></iconify-icon>
+            </div>
+            <span class="text-red-400 font-inter font-semibold text-sm">Problema Crítico</span>
+          </div>
+          <h3 class="font-manrope font-bold text-white text-lg mb-3">2.576 seguidores desperdiçados</h3>
+          <p class="text-zinc-400 font-inter text-sm leading-relaxed">
+            Sem perfil Business, sem link na bio, sem Pixel instalado. Seus seguidores passam pelo perfil e <strong class="text-white">vão embora sem um próximo passo</strong> definido.
+          </p>
+          <div class="mt-4 pt-4 border-t border-red-500/10">
+            <span class="text-red-400 text-xs font-inter font-medium">Conversões mensuráveis →</span>
+            <span class="text-white text-xs font-inter font-bold ml-1">zero</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Custo real -->
+      <div class="border border-[#5070b0]/20 bg-[#5070b0]/5 rounded-2xl p-8 reveal">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-full bg-[#5070b0]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+            <iconify-icon icon="lucide:trending-up" width="18" class="text-[#5070b0]"></iconify-icon>
+          </div>
+          <div>
+            <h3 class="font-manrope font-bold text-white text-xl mb-3">O Custo Real de Ficar Parado</h3>
+            <div class="grid md:grid-cols-3 gap-4 text-sm font-inter text-zinc-400">
+              <p>Cada dia sem Google Meu Negócio é um dia em que buscas de altíssima intenção em Cuiabá convertem para seus concorrentes.</p>
+              <p>Cada semana sem site é uma semana em que sua credibilidade digital fica aquém das suas credenciais reais como formado na UFMT.</p>
+              <p>Cada mês sem estrutura de captação é um mês em que seus <span class="text-white font-semibold">2.576 seguidores</span> não geram uma única consulta rastreável.</p>
+            </div>
+            <p class="mt-4 text-[#5070b0] font-inter font-semibold text-sm">O investimento em não agir tem um custo — ele só não aparece em nenhuma fatura.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO POR QUE É DIFERENTE ========== -->
+  <section class="relative z-10 py-24 px-6 bg-gradient-to-b from-transparent via-[#0a1128]/30 to-transparent">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="section-divider mb-16 reveal"></div>
+
+      <div class="reveal">
+        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">02 — Comparativo</span>
+      </div>
+
+      <div class="mt-4 mb-12 reveal">
+        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
+          Antes vs. Depois da<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Nossa Estrutura</span>
+        </h2>
+      </div>
+
+      <div class="rounded-3xl border border-white/10 bg-black/40 backdrop-blur-sm overflow-hidden reveal">
+        <table class="compare-table w-full">
+          <thead>
+            <tr class="bg-[#5070b0]/10">
+              <th style="width:40%">Situação</th>
+              <th style="width:30%">Hoje (sem estrutura)</th>
+              <th style="width:30%">Com a Avestra</th>
+            </tr>
+          </thead>
+          <tbody class="font-inter">
+            <tr>
+              <td class="text-zinc-300 font-medium">Visibilidade no Google</td>
+              <td class="bad flex items-center gap-2"><iconify-icon icon="lucide:x" width="14"></iconify-icon> Inexistente</td>
+              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Aparece nas buscas locais</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Google Maps</td>
+              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Não cadastrado</td>
+              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Perfil completo e verificado</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Site profissional</td>
+              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Não existe</td>
+              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Landing page otimizada para SEO</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Instagram Business</td>
+              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Conta pessoal, sem métricas</td>
+              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Business com analytics e anúncios</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Link na bio</td>
+              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Não existe</td>
+              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Página estratégica com WhatsApp direto</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Facebook Pixel</td>
+              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Não instalado</td>
+              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Rastreamento completo ativo</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Leads rastreáveis</td>
+              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Zero mensuráveis</td>
+              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>15–35 leads/mês no mês 3</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Campanhas pagas</td>
+              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Impossível sem estrutura</td>
+              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Meta Ads + Google Ads geolocalizados</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Avaliações no Google</td>
+              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Zero</td>
+              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Estratégia de acúmulo contínuo</td>
+            </tr>
+            <tr class="bg-[#5070b0]/5">
+              <td class="text-zinc-300 font-medium font-semibold">Resultado geral</td>
+              <td class="bad font-semibold"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Invisível para clientes</td>
+              <td class="good font-semibold"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Referência em Direito de Família em Cuiabá</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO A SOLUÇÃO / PILARES ========== -->
+  <section id="solucao" class="relative z-10 py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="section-divider mb-16 reveal"></div>
+
+      <div class="reveal">
+        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">03 — A Solução</span>
+      </div>
+
+      <div class="mt-4 mb-4 reveal">
+        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
+          Sua Máquina de<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Captação de Clientes</span>
+        </h2>
+      </div>
+
+      <p class="text-zinc-400 font-inter text-base max-w-2xl mb-14 leading-relaxed reveal">
+        Não vendemos serviços avulsos. Construímos a infraestrutura digital completa que transforma sua autoridade jurídica em consultas agendadas — de forma previsível e escalável.
+      </p>
+
+      <!-- Bento Grid Pilares -->
+      <div class="pilares-grid grid lg:grid-cols-3 gap-6">
+
+        <!-- Pilar 1 — Grande (col-span-2 row-span-2) -->
+        <div class="pilar-card lg:col-span-2 lg:row-span-2 border border-[#5070b0]/20 bg-[#5070b0]/5 rounded-3xl p-8 reveal">
+          <div class="flex items-start justify-between mb-6">
+            <div class="glow-number font-manrope font-bold text-6xl text-[#5070b0]/30">01</div>
+            <div class="w-12 h-12 rounded-2xl bg-[#5070b0]/20 flex items-center justify-center">
+              <iconify-icon icon="lucide:globe" width="24" class="text-[#5070b0]"></iconify-icon>
+            </div>
+          </div>
+          <h3 class="font-manrope font-bold text-white text-2xl mb-3">Site Profissional com Foco em Conversão</h3>
+          <p class="text-zinc-400 font-inter text-sm leading-relaxed mb-6">
+            Landing page profissional desenvolvida especificamente para o Direito de Família em Cuiabá — seu endereço digital permanente na internet.
+          </p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3 text-zinc-300 font-inter text-sm">
+              <iconify-icon icon="lucide:check" width="16" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Ranqueamento para termos como <em>"advogado direito de família Cuiabá"</em>, <em>"divórcio Cuiabá"</em>, <em>"guarda de filhos Cuiabá"</em>
+            </li>
+            <li class="flex items-start gap-3 text-zinc-300 font-inter text-sm">
+              <iconify-icon icon="lucide:check" width="16" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Botão de WhatsApp com mensagem pré-formatada para facilitar o primeiro contato
+            </li>
+            <li class="flex items-start gap-3 text-zinc-300 font-inter text-sm">
+              <iconify-icon icon="lucide:check" width="16" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Formulário de agendamento de consulta integrado e rastreável
+            </li>
+            <li class="flex items-start gap-3 text-zinc-300 font-inter text-sm">
+              <iconify-icon icon="lucide:check" width="16" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Design de credibilidade alinhado à sua trajetória na UFMT
+            </li>
+          </ul>
+          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-2">
+            <iconify-icon icon="lucide:trending-up" width="14" class="text-green-400"></iconify-icon>
+            <span class="text-green-400 font-inter text-xs font-semibold">Captação de leads 24h/dia, mesmo em audiência</span>
+          </div>
+        </div>
+
+        <!-- Pilar 2 -->
+        <div class="pilar-card border border-white/10 bg-white/3 rounded-3xl p-6 reveal">
+          <div class="glow-number font-manrope font-bold text-4xl text-[#5070b0]/30 mb-4">02</div>
+          <div class="w-10 h-10 rounded-xl bg-[#5070b0]/20 flex items-center justify-center mb-4">
+            <iconify-icon icon="lucide:map-pin" width="20" class="text-[#5070b0]"></iconify-icon>
+          </div>
+          <h3 class="font-manrope font-bold text-white text-lg mb-3">Google Meu Negócio Otimizado</h3>
+          <ul class="space-y-2 mb-5">
+            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
+              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Cadastro completo + verificação
+            </li>
+            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
+              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Aparece no Google Maps de Cuiabá
+            </li>
+            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
+              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Estratégia de avaliações públicas
+            </li>
+          </ul>
+          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-3 py-1.5">
+            <span class="text-green-400 font-inter text-xs font-semibold">Aparecer no momento da intenção de compra</span>
+          </div>
+        </div>
+
+        <!-- Pilar 3 -->
+        <div class="pilar-card border border-white/10 bg-white/3 rounded-3xl p-6 reveal">
+          <div class="glow-number font-manrope font-bold text-4xl text-[#5070b0]/30 mb-4">03</div>
+          <div class="w-10 h-10 rounded-xl bg-[#5070b0]/20 flex items-center justify-center mb-4">
+            <iconify-icon icon="lucide:instagram" width="20" class="text-[#5070b0]"></iconify-icon>
+          </div>
+          <h3 class="font-manrope font-bold text-white text-lg mb-3">Instagram Profissional Reestruturado</h3>
+          <div class="bg-black/40 rounded-xl p-3 mb-4 border border-white/10">
+            <p class="text-zinc-300 font-inter text-xs leading-relaxed">
+              ⚖️ Advogado | Direito de Família, Civil e Saúde<br>
+              📍 Cuiabá - MT | UFMT<br>
+              📲 Consulta pelo link abaixo 👇
+            </p>
+          </div>
+          <ul class="space-y-2 mb-5">
+            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
+              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Migração para conta Business
+            </li>
+            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
+              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Link estratégico + WhatsApp direto
+            </li>
+            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
+              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Habilitação para Meta Ads
+            </li>
+          </ul>
+          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-3 py-1.5">
+            <span class="text-green-400 font-inter text-xs font-semibold">2.576 seguidores com caminho para consulta</span>
+          </div>
+        </div>
+
+        <!-- Pilar 4 -->
+        <div class="pilar-card border border-white/10 bg-white/3 rounded-3xl p-6 reveal">
+          <div class="glow-number font-manrope font-bold text-4xl text-[#5070b0]/30 mb-4">04</div>
+          <div class="w-10 h-10 rounded-xl bg-[#5070b0]/20 flex items-center justify-center mb-4">
+            <iconify-icon icon="lucide:bar-chart-2" width="20" class="text-[#5070b0]"></iconify-icon>
+          </div>
+          <h3 class="font-manrope font-bold text-white text-lg mb-3">Pixel e Rastreamento Analytics</h3>
+          <ul class="space-y-2 mb-5">
+            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
+              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Facebook Pixel no site
+            </li>
+            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
+              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Google Analytics configurado
+            </li>
+            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
+              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
+              Remarketing e públicos personalizados
+            </li>
+          </ul>
+          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-3 py-1.5">
+            <span class="text-green-400 font-inter text-xs font-semibold">Decisões baseadas em dados reais</span>
+          </div>
+        </div>
+
+        <!-- Pilar 5 — Gestão de Anúncios -->
+        <div class="pilar-card lg:col-span-2 border border-[#5070b0]/20 bg-gradient-to-br from-[#5070b0]/10 to-transparent rounded-3xl p-8 reveal">
+          <div class="flex items-start justify-between mb-6">
+            <div class="glow-number font-manrope font-bold text-6xl text-[#5070b0]/30">05</div>
+            <div class="w-12 h-12 rounded-2xl bg-[#5070b0]/20 flex items-center justify-center">
+              <iconify-icon icon="lucide:zap" width="24" class="text-[#5070b0]"></iconify-icon>
+            </div>
+          </div>
+          <h3 class="font-manrope font-bold text-white text-2xl mb-3">Gestão de Anúncios Geolocalizados</h3>
+          <p class="text-zinc-400 font-inter text-sm leading-relaxed mb-6">
+            Campanhas pagas segmentadas para Cuiabá, focadas em Direito de Família — Meta Ads + Google Ads com relatórios mensais claros.
+          </p>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
+            <div class="bg-black/30 rounded-xl p-3 text-center border border-white/5">
+              <div class="text-[#5070b0] font-manrope font-bold text-lg">100%</div>
+              <div class="text-zinc-500 font-inter text-xs">Cuiabá-MT</div>
+            </div>
+            <div class="bg-black/30 rounded-xl p-3 text-center border border-white/5">
+              <div class="text-[#5070b0] font-manrope font-bold text-lg">Meta</div>
+              <div class="text-zinc-500 font-inter text-xs">Insta + Face</div>
+            </div>
+            <div class="bg-black/30 rounded-xl p-3 text-center border border-white/5">
+              <div class="text-[#5070b0] font-manrope font-bold text-lg">Google</div>
+              <div class="text-zinc-500 font-inter text-xs">Busca ativa</div>
+            </div>
+            <div class="bg-black/30 rounded-xl p-3 text-center border border-white/5">
+              <div class="text-[#5070b0] font-manrope font-bold text-lg">Relatório</div>
+              <div class="text-zinc-500 font-inter text-xs">Mensal</div>
+            </div>
+          </div>
+          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-2">
+            <iconify-icon icon="lucide:trending-up" width="14" class="text-green-400"></iconify-icon>
+            <span class="text-green-400 font-inter text-xs font-semibold">Previsibilidade: invista R$ X e saiba quantas consultas virão</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO JORNADA / RESULTADOS ESPERADOS ========== -->
+  <section class="relative z-10 py-24 px-6 bg-gradient-to-b from-transparent via-[#0a1128]/20 to-transparent">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="section-divider mb-16 reveal"></div>
+
+      <div class="reveal">
+        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">04 — Resultados Esperados</span>
+      </div>
+
+      <div class="mt-4 mb-12 reveal">
+        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
+          Projeções Conservadoras<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Mês a Mês</span>
+        </h2>
+      </div>
+
+      <!-- Tabela de resultados -->
+      <div class="rounded-3xl border border-white/10 bg-black/40 backdrop-blur-sm overflow-hidden mb-10 reveal">
+        <table class="compare-table w-full">
+          <thead>
+            <tr class="bg-[#5070b0]/10">
+              <th style="width:40%">Indicador</th>
+              <th style="width:20%">Mês 1</th>
+              <th style="width:20%">Mês 2</th>
+              <th style="width:20%">Mês 3</th>
+            </tr>
+          </thead>
+          <tbody class="font-inter">
+            <tr>
+              <td class="text-zinc-300 font-medium">Aparições em buscas locais (GMB)</td>
+              <td class="text-amber-400 font-medium">Primeiras aparições</td>
+              <td class="text-[#5070b0] font-medium">50–150/mês</td>
+              <td class="good font-semibold">200–400/mês</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Visitas ao site</td>
+              <td class="text-amber-400 font-medium">Estrutura no ar</td>
+              <td class="text-[#5070b0] font-medium">80–200/mês</td>
+              <td class="good font-semibold">200–500/mês</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Leads gerados (WhatsApp + form.)</td>
+              <td class="text-amber-400 font-medium">3–8 leads</td>
+              <td class="text-[#5070b0] font-medium">8–20 leads</td>
+              <td class="good font-semibold">15–35 leads</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Cliques no link da bio (Instagram)</td>
+              <td class="text-amber-400 font-medium">+40% vs. hoje</td>
+              <td class="text-[#5070b0] font-medium">Crescimento contínuo</td>
+              <td class="good font-semibold">Base consolidada</td>
+            </tr>
+            <tr>
+              <td class="text-zinc-300 font-medium">Avaliações no Google</td>
+              <td class="text-amber-400 font-medium">0 → primeiras 5</td>
+              <td class="text-[#5070b0] font-medium">5–15</td>
+              <td class="good font-semibold">15–30</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-[#5070b0]/10 border border-[#5070b0]/20 rounded-2xl p-6 reveal">
+        <div class="flex items-start gap-3">
+          <iconify-icon icon="lucide:info" width="18" class="text-[#5070b0] flex-shrink-0 mt-0.5"></iconify-icon>
+          <p class="text-zinc-300 font-inter text-sm leading-relaxed">
+            <strong class="text-white">Nota importante:</strong> Esses números consideram apenas tráfego orgânico e estrutura básica de captação. Com anúncios pagos ativos, os números de lead podem dobrar ou triplicar já no primeiro mês. Uma única consulta convertida em cliente já representa retorno sobre o investimento desta proposta.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== SEÇÃO CRONOGRAMA ========== -->
+  <section id="cronograma" class="relative z-10 py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="section-divider mb-16 reveal"></div>
+
+      <div class="reveal">
+        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">05 — Cronograma</span>
+      </div>
+
+      <div class="mt-4 mb-12 reveal">
+        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
+          Implementação em<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">4 Fases Claras</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Fase 1 -->
+        <div class="border border-white/10 rounded-3xl overflow-hidden reveal">
+          <div class="h-1.5 bg-gradient-to-r from-[#5070b0] to-[#7090d0]"></div>
+          <div class="p-8">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[#5070b0] font-inter font-bold text-xs uppercase tracking-widest">Fase 1</span>
+              <span class="text-zinc-500 font-inter text-xs border border-zinc-700 rounded-full px-3 py-1">D+1 a D+7</span>
+            </div>
+            <h3 class="font-manrope font-bold text-white text-xl mb-2">Fundação</h3>
+            <p class="text-zinc-500 font-inter text-xs italic mb-6">"Sua presença digital começa a existir"</p>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
+                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
+                </div>
+                Reunião de onboarding e coleta de informações
+              </li>
+              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
+                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
+                </div>
+                Criação e verificação do Google Meu Negócio
+              </li>
+              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
+                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
+                </div>
+                Migração do Instagram para Business
+              </li>
+              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
+                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
+                </div>
+                Reescrita da bio + link estratégico
+              </li>
+              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
+                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
+                </div>
+                Instalação do Facebook Pixel e Google Analytics
+              </li>
+            </ul>
+            <div class="mt-6 pt-6 border-t border-white/5">
+              <div class="flex items-center gap-2">
+                <iconify-icon icon="lucide:flag" width="14" class="text-amber-400"></iconify-icon>
+                <span class="text-amber-400 font-inter text-xs font-semibold">Marco: Você já aparece no Google Maps e o Instagram converte</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fase 2 -->
+        <div class="border border-white/10 rounded-3xl overflow-hidden reveal">
+          <div class="h-1.5 bg-gradient-to-r from-[#5070b0] to-[#7090d0]"></div>
+          <div class="p-8">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-[#5070b0] font-inter font-bold text-xs uppercase tracking-widest">Fase 2</span>
+              <span class="text-zinc-500 font-inter text-xs border border-zinc-700 rounded-full px-3 py-1">D
