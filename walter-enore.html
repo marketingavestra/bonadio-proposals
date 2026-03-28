@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proposta Comercial — Walter Enoré | Agência Avestra</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposta Comercial — Walter Enoré Advocacia | Agência Avestra</title>
+  <meta name="robots" content="noindex, nofollow" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     :root { --accent-blue: #5070b0; --accent-blue-glow: rgba(80, 112, 176, 0.5); }
@@ -51,667 +52,494 @@
     .compare-table .bad { color: #ef4444; } .compare-table .good { color: #22c55e; }
     ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: #000; } ::-webkit-scrollbar-thumb { background: #5070b0; border-radius: 3px; }
     @media (max-width: 768px) { .pilares-grid { grid-template-columns: 1fr !important; } }
-    html { font-family: 'Inter', sans-serif; }
-    body { background: #000; color: #fff; overflow-x: hidden; }
   </style>
 </head>
-<body class="selection-blue font-inter">
 
-  <!-- ========== BACKGROUND FIXO ========== -->
-  <div class="fixed inset-0 z-0 pointer-events-none">
-    <div class="absolute inset-0 bg-gradient-to-b from-[#0a1128] to-black"></div>
-    <div class="w-[1px] h-[1px] bg-transparent stars-1 animate-[animStar_50s_linear_infinite] absolute top-0 left-0"></div>
-    <div class="w-[2px] h-[2px] bg-transparent stars-2 animate-[animStar_80s_linear_infinite] absolute top-0 left-0"></div>
-    <div class="w-[3px] h-[3px] bg-transparent stars-3 animate-[animStar_120s_linear_infinite] absolute top-0 left-0"></div>
-    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/5 rounded-full blur-[120px]"></div>
-    <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+<body class="bg-[#0a1128] selection-blue font-inter text-white overflow-x-hidden">
+
+  <!-- ═══════════════════════════════════════════ BACKGROUND ═══════════════════════════════════════════ -->
+  <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
+    <!-- Stars layer 1 -->
+    <div class="stars-1 absolute rounded-full" style="width:1px;height:1px;top:0;left:0;animation:animStar 80s linear infinite;"></div>
+    <!-- Stars layer 2 -->
+    <div class="stars-2 absolute rounded-full" style="width:2px;height:2px;top:0;left:0;animation:animStar 120s linear infinite;opacity:0.6;"></div>
+    <!-- Stars layer 3 (blue tinted) -->
+    <div class="stars-3 absolute rounded-full" style="width:3px;height:3px;top:0;left:0;animation:animStar 200s linear infinite;opacity:0.4;"></div>
+    <!-- Radial glow center -->
+    <div class="absolute inset-0" style="background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(80,112,176,0.12) 0%, transparent 70%);"></div>
+    <!-- Radial glow bottom -->
+    <div class="absolute inset-0" style="background: radial-gradient(ellipse 60% 40% at 50% 100%, rgba(80,112,176,0.07) 0%, transparent 70%);"></div>
+    <!-- Grid overlay -->
+    <div class="absolute inset-0" style="background-image: linear-gradient(rgba(80,112,176,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(80,112,176,0.04) 1px, transparent 1px); background-size: 60px 60px;"></div>
   </div>
 
-  <!-- ========== TOP BLUR ========== -->
+  <!-- ═══════════════════════════════════════════ GRADIENT BLUR ═══════════════════════════════════════════ -->
   <div class="gradient-blur"></div>
 
-  <!-- ========== NAVBAR ========== -->
-  <nav class="fixed top-5 left-0 right-0 z-50 flex justify-center px-4">
-    <div class="max-w-5xl w-full mx-auto px-6 py-3 bg-black/60 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-between">
-      <span class="font-manrope font-bold text-white text-sm tracking-tight">
-        <span class="text-[#5070b0]">AV</span>ESTRA
-      </span>
-      <div class="hidden md:flex items-center gap-6">
-        <a href="#diagnostico" class="text-zinc-400 hover:text-white text-xs font-inter transition-colors duration-200">Diagnóstico</a>
-        <a href="#solucao" class="text-zinc-400 hover:text-white text-xs font-inter transition-colors duration-200">Solução</a>
-        <a href="#cronograma" class="text-zinc-400 hover:text-white text-xs font-inter transition-colors duration-200">Cronograma</a>
-        <a href="#investimento" class="text-zinc-400 hover:text-white text-xs font-inter transition-colors duration-200">Investimento</a>
+  <!-- ═══════════════════════════════════════════ NAVBAR ═══════════════════════════════════════════ -->
+  <nav class="fixed top-4 left-0 right-0 z-50 px-4 flex justify-center">
+    <div class="max-w-5xl w-full bg-black/60 backdrop-blur-xl rounded-full border border-white/[0.08] px-6 py-3 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <div class="w-7 h-7 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #5070b0, #2a4080);">
+          <span class="text-white font-bold text-xs font-manrope">A</span>
+        </div>
+        <span class="font-manrope font-700 text-sm text-white/80 tracking-tight hidden sm:block">Avestra</span>
       </div>
-      <a href="https://calendly.com/marketingavestra/30min" target="_blank"
-        class="shiny-cta text-white font-manrope font-semibold text-xs flex items-center gap-2 no-underline"
-        style="padding: 0.5rem 1.2rem;">
-        <iconify-icon icon="lucide:calendar" width="14"></iconify-icon>
-        <span style="position:relative;z-index:1;">Agendar</span>
+      <!-- Links -->
+      <div class="hidden md:flex items-center gap-1">
+        <a href="#diagnostico" class="text-xs text-zinc-400 hover:text-white transition-colors duration-200 px-3 py-1.5 rounded-full hover:bg-white/5 font-inter">Diagnóstico</a>
+        <a href="#solucao" class="text-xs text-zinc-400 hover:text-white transition-colors duration-200 px-3 py-1.5 rounded-full hover:bg-white/5 font-inter">Solução</a>
+        <a href="#investimento" class="text-xs text-zinc-400 hover:text-white transition-colors duration-200 px-3 py-1.5 rounded-full hover:bg-white/5 font-inter">Investimento</a>
+        <a href="#contato" class="text-xs text-zinc-400 hover:text-white transition-colors duration-200 px-3 py-1.5 rounded-full hover:bg-white/5 font-inter">Contato</a>
+      </div>
+      <!-- CTA -->
+      <a href="https://calendly.com/marketingavestra/30min" target="_blank" class="shiny-cta text-white font-manrope font-semibold text-xs tracking-wide" style="padding: 0.5rem 1.25rem;">
+        <span class="relative z-10">Agendar Reunião</span>
       </a>
     </div>
   </nav>
 
-  <!-- ========== HERO ========== -->
-  <section class="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-20">
+  <!-- ═══════════════════════════════════════════ HERO ═══════════════════════════════════════════ -->
+  <section class="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pt-24 pb-16">
     <div class="max-w-4xl mx-auto text-center">
 
-      <!-- Badge animado -->
-      <div class="animate-fade-up inline-flex items-center gap-2 bg-[#5070b0]/10 border border-[#5070b0]/30 rounded-full px-4 py-2 mb-8">
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-[#5070b0]/10 border border-[#5070b0]/30 rounded-full px-4 py-2 mb-8 animate-fade-up" style="animation-delay: 0.1s;">
         <span class="relative flex h-2 w-2">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#5070b0] opacity-75"></span>
           <span class="relative inline-flex rounded-full h-2 w-2 bg-[#5070b0]"></span>
         </span>
-        <span class="text-[#5070b0] text-xs font-inter font-medium uppercase tracking-widest">Proposta Exclusiva — Confidencial</span>
+        <span class="text-[#5070b0] font-inter font-medium text-xs tracking-widest uppercase">Proposta Exclusiva · Junho 2025 · Válida por 7 dias</span>
       </div>
 
       <!-- Título principal -->
-      <h1 class="font-manrope font-semibold tracking-tighter text-5xl md:text-7xl leading-tight mb-6" style="animation: fade-in-up 0.8s ease-out 0.2s forwards; opacity: 0;">
-        <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">
-          De Advogado Invisível<br>a
-        </span>
-        <span class="relative inline-block ml-3">
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Referência</span>
-          <svg class="absolute -bottom-2 left-0 w-full" height="8" viewBox="0 0 200 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 6C40 2 80 1 100 3C120 5 160 6 198 4" stroke="#5070b0" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.7"/>
+      <h1 class="font-manrope font-900 text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.08] tracking-tight mb-6 animate-fade-up" style="animation-delay: 0.25s;">
+        Da Invisibilidade à<br />
+        <span class="relative inline-block">
+          <span style="color: #5070b0;">Referência Digital</span>
+          <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:10px;">
+            <path d="M2 8.5C50 3 100 1.5 150 3.5C200 5.5 250 7 298 5" stroke="#5070b0" stroke-width="3" stroke-linecap="round" stroke-opacity="0.7"/>
           </svg>
         </span>
-        <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">
-          <br>em Cuiabá
-        </span>
+        <br />em Cuiabá
       </h1>
 
-      <!-- Nome em destaque -->
-      <div class="font-manrope font-bold text-3xl md:text-4xl mb-4" style="animation: fade-in-up 0.8s ease-out 0.35s forwards; opacity: 0;">
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] via-[#7090d0] to-[#5070b0]">Walter Enoré</span>
-      </div>
-
       <!-- Subtítulo -->
-      <p class="text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto mb-8 leading-relaxed font-inter font-light" style="animation: fade-in-up 0.8s ease-out 0.5s forwards; opacity: 0;">
-        Uma análise completa revelou onde você está perdendo clientes agora — e um plano concreto para mudar isso nos próximos 30 dias.
+      <p class="font-inter text-zinc-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-4 animate-fade-up" style="animation-delay: 0.4s;">
+        Como transformar sua presença digital no maior captador de clientes do seu escritório — com infraestrutura sólida, dados reais e resultados mensuráveis.
       </p>
 
-      <!-- Linha de meta informações -->
-      <div class="flex flex-wrap items-center justify-center gap-4 mb-10 text-xs font-inter text-zinc-500" style="animation: fade-in-up 0.8s ease-out 0.6s forwards; opacity: 0;">
-        <span class="flex items-center gap-1.5">
-          <iconify-icon icon="lucide:user" width="12" class="text-[#5070b0]"></iconify-icon>
-          Para: Walter Enoré
-        </span>
-        <span class="text-zinc-700">•</span>
-        <span class="flex items-center gap-1.5">
-          <iconify-icon icon="lucide:building-2" width="12" class="text-[#5070b0]"></iconify-icon>
-          De: Agência Avestra
-        </span>
-        <span class="text-zinc-700">•</span>
-        <span class="flex items-center gap-1.5">
-          <iconify-icon icon="lucide:calendar" width="12" class="text-[#5070b0]"></iconify-icon>
-          Junho de 2025
-        </span>
-        <span class="text-zinc-700">•</span>
-        <span class="flex items-center gap-1.5 text-amber-400/80">
-          <iconify-icon icon="lucide:clock" width="12"></iconify-icon>
-          Válida por 7 dias
-        </span>
+      <!-- Para / De -->
+      <div class="inline-flex flex-col sm:flex-row items-center gap-3 sm:gap-6 bg-white/[0.03] border border-white/[0.07] rounded-2xl px-6 py-4 mb-10 animate-fade-up" style="animation-delay: 0.5s;">
+        <div class="flex items-center gap-2">
+          <iconify-icon icon="solar:user-bold" class="text-[#5070b0] text-base"></iconify-icon>
+          <span class="text-zinc-300 font-inter text-sm"><span class="text-zinc-500 text-xs mr-1">Para:</span><strong class="font-semibold text-white">Walter Enoré</strong> · Advogado & Economista · Cuiabá-MT</span>
+        </div>
+        <div class="hidden sm:block w-px h-4 bg-white/10"></div>
+        <div class="flex items-center gap-2">
+          <iconify-icon icon="solar:buildings-bold" class="text-[#5070b0] text-base"></iconify-icon>
+          <span class="text-zinc-300 font-inter text-sm"><span class="text-zinc-500 text-xs mr-1">De:</span><strong class="font-semibold text-white">Agência Avestra</strong></span>
+        </div>
       </div>
 
-      <!-- CTA Hero -->
-      <div style="animation: fade-in-up 0.8s ease-out 0.75s forwards; opacity: 0;">
-        <a href="#diagnostico" class="shiny-cta inline-flex items-center gap-3 text-white font-manrope font-semibold text-base no-underline">
-          <span style="position:relative;z-index:1;">Ver Proposta Completa</span>
-          <iconify-icon icon="lucide:arrow-right" width="18" style="position:relative;z-index:1;"></iconify-icon>
+      <!-- CTA Button -->
+      <div class="animate-fade-up" style="animation-delay: 0.6s;">
+        <a href="#diagnostico" class="shiny-cta inline-flex items-center gap-3 text-white font-manrope font-bold text-base tracking-wide">
+          <span class="relative z-10 flex items-center gap-2">
+            <iconify-icon icon="solar:document-bold" class="text-[#5070b0] text-lg relative z-10"></iconify-icon>
+            <span class="relative z-10">Ver Proposta Completa</span>
+            <iconify-icon icon="solar:arrow-down-bold" class="text-zinc-400 text-sm relative z-10"></iconify-icon>
+          </span>
         </a>
       </div>
 
-      <!-- Quote -->
-      <div class="mt-16 max-w-2xl mx-auto border border-[#5070b0]/20 rounded-2xl p-6 bg-[#5070b0]/5 backdrop-blur-sm" style="animation: fade-in-up 0.8s ease-out 0.9s forwards; opacity: 0;">
-        <p class="text-zinc-300 font-manrope font-light text-base italic leading-relaxed">
-          "Você tem o conhecimento. Tem até uma audiência construída. O que falta é uma estrutura que trabalhe por você enquanto você está dentro do fórum."
+      <!-- Urgency note -->
+      <p class="mt-6 text-zinc-600 text-xs font-inter animate-fade-up" style="animation-delay: 0.75s;">
+        <iconify-icon icon="solar:clock-circle-linear" class="inline text-zinc-500 text-sm mr-1"></iconify-icon>
+        Esta proposta expira em 7 dias · Preparada exclusivamente para você
+      </p>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40 animate-fade-up" style="animation-delay: 1s;">
+      <div class="w-px h-8 bg-gradient-to-b from-transparent to-[#5070b0]"></div>
+      <iconify-icon icon="solar:alt-arrow-down-bold" class="text-[#5070b0] text-sm"></iconify-icon>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ DIAGNÓSTICO ═══════════════════════════════════════════ -->
+  <section id="diagnostico" class="relative z-10 py-24 px-4">
+    <div class="max-w-5xl mx-auto">
+
+      <!-- Section label -->
+      <div class="flex items-center gap-3 mb-4 reveal">
+        <div class="h-px w-8 bg-[#5070b0]"></div>
+        <span class="text-[#5070b0] font-inter font-600 text-xs tracking-[0.25em] uppercase">01 — Diagnóstico</span>
+      </div>
+
+      <h2 class="font-manrope font-800 text-3xl md:text-4xl lg:text-5xl leading-tight mb-4 reveal">
+        Você Existe.<br />
+        <span class="text-zinc-500">O Google Não Sabe Disso.</span>
+      </h2>
+      <p class="text-zinc-400 font-inter text-base md:text-lg max-w-2xl leading-relaxed mb-16 reveal">
+        Walter, você tem algo raro: dupla formação em Direito e Economia pela UFMT, atuação em nichos de alta demanda e 2.577 seguidores no Instagram. Mas existe um problema silencioso que custa caro todos os dias.
+      </p>
+
+      <!-- Metric cards -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+        <!-- Score -->
+        <div class="metric-card border border-[#5070b0]/20 rounded-2xl p-5 flex flex-col gap-2 reveal" style="animation: pulse-glow 3s ease-in-out infinite;">
+          <iconify-icon icon="solar:chart-square-bold" class="text-[#5070b0] text-2xl"></iconify-icon>
+          <div class="glow-number font-manrope font-900 text-5xl text-[#5070b0]">12</div>
+          <div class="text-zinc-500 font-inter text-xs leading-tight">Score de presença digital<br /><span class="text-red-400 font-semibold">de 100</span></div>
+        </div>
+        <!-- Seguidores -->
+        <div class="metric-card border border-white/[0.07] rounded-2xl p-5 flex flex-col gap-2 reveal">
+          <iconify-icon icon="solar:users-group-rounded-bold" class="text-[#5070b0] text-2xl"></iconify-icon>
+          <div class="glow-number font-manrope font-900 text-5xl text-white">2.5k</div>
+          <div class="text-zinc-500 font-inter text-xs leading-tight">Seguidores no Instagram<br /><span class="text-yellow-400 font-semibold">sem link na bio</span></div>
+        </div>
+        <!-- Captação -->
+        <div class="metric-card border border-white/[0.07] rounded-2xl p-5 flex flex-col gap-2 reveal">
+          <iconify-icon icon="solar:target-bold" class="text-[#5070b0] text-2xl"></iconify-icon>
+          <div class="glow-number font-manrope font-900 text-5xl text-white">1</div>
+          <div class="text-zinc-500 font-inter text-xs leading-tight">Canal de captação ativo<br /><span class="text-red-400 font-semibold">Instagram apenas</span></div>
+        </div>
+        <!-- Google -->
+        <div class="metric-card border border-white/[0.07] rounded-2xl p-5 flex flex-col gap-2 reveal">
+          <iconify-icon icon="solar:magnifer-bold" class="text-[#5070b0] text-2xl"></iconify-icon>
+          <div class="glow-number font-manrope font-900 text-5xl text-white">0</div>
+          <div class="text-zinc-500 font-inter text-xs leading-tight">Aparições no Google<br /><span class="text-red-400 font-semibold">por mês</span></div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="section-divider mb-16 reveal"></div>
+
+      <!-- Empathy paragraph -->
+      <div class="bg-white/[0.02] border border-white/[0.06] rounded-2xl p-6 md:p-8 mb-12 reveal">
+        <p class="font-inter text-zinc-300 text-sm md:text-base leading-relaxed mb-4">
+          Neste exato momento, enquanto você lê esta proposta, alguém em Cuiabá está digitando no Google:
+        </p>
+        <div class="flex flex-col sm:flex-row flex-wrap gap-3 mb-5">
+          <div class="inline-flex items-center gap-2 bg-[#0a1128] border border-white/[0.08] rounded-lg px-4 py-2.5">
+            <iconify-icon icon="solar:magnifer-linear" class="text-zinc-500 text-sm"></iconify-icon>
+            <span class="text-zinc-300 font-inter text-sm italic">"advogado plano de saúde Cuiabá"</span>
+          </div>
+          <div class="inline-flex items-center gap-2 bg-[#0a1128] border border-white/[0.08] rounded-lg px-4 py-2.5">
+            <iconify-icon icon="solar:magnifer-linear" class="text-zinc-500 text-sm"></iconify-icon>
+            <span class="text-zinc-300 font-inter text-sm italic">"advogado direito do consumidor MT"</span>
+          </div>
+          <div class="inline-flex items-center gap-2 bg-[#0a1128] border border-white/[0.08] rounded-lg px-4 py-2.5">
+            <iconify-icon icon="solar:magnifer-linear" class="text-zinc-500 text-sm"></iconify-icon>
+            <span class="text-zinc-300 font-inter text-sm italic">"advogado cível Cuiabá"</span>
+          </div>
+        </div>
+        <p class="font-inter text-zinc-300 text-sm md:text-base leading-relaxed">
+          Esse potencial cliente <strong class="text-white">não encontra você.</strong> Ele encontra seus concorrentes. E cada cliente fechado representa, conservadoramente, <strong class="text-[#5070b0]">R$ 1.500 a R$ 5.000 em honorários.</strong>
         </p>
       </div>
 
-    </div>
-  </section>
+      <!-- 3 Problem cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-  <!-- ========== SEÇÃO DIAGNÓSTICO ========== -->
-  <section id="diagnostico" class="relative z-10 py-24 px-6">
-    <div class="max-w-5xl mx-auto">
+        <!-- Problema 1 -->
+        <div class="pilar-card bg-white/[0.02] border border-red-500/20 rounded-2xl p-6 reveal">
+          <div class="w-10 h-10 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center mb-4">
+            <iconify-icon icon="solar:eye-closed-bold" class="text-red-400 text-xl"></iconify-icon>
+          </div>
+          <div class="inline-flex items-center gap-1 bg-red-500/10 border border-red-500/20 rounded-full px-2.5 py-1 mb-3">
+            <span class="text-red-400 font-inter font-600 text-xs">Crítico</span>
+          </div>
+          <h3 class="font-manrope font-700 text-white text-base mb-2">Invisibilidade Total no Google</h3>
+          <p class="font-inter text-zinc-500 text-sm leading-relaxed">
+            Seu escritório simplesmente não aparece quando alguém busca por advogados em Cuiabá. Concorrentes com Google Meu Negócio ativo aparecem no mapa, recebem ligações e fecham contratos. Você não tem sequer a chance de competir.
+          </p>
+        </div>
 
-      <div class="section-divider mb-16 reveal"></div>
+        <!-- Problema 2 -->
+        <div class="pilar-card bg-white/[0.02] border border-orange-500/20 rounded-2xl p-6 reveal" style="transition-delay: 0.1s;">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-4">
+            <iconify-icon icon="solar:danger-triangle-bold" class="text-orange-400 text-xl"></iconify-icon>
+          </div>
+          <div class="inline-flex items-center gap-1 bg-orange-500/10 border border-orange-500/20 rounded-full px-2.5 py-1 mb-3">
+            <span class="text-orange-400 font-inter font-600 text-xs">Alto Risco</span>
+          </div>
+          <h3 class="font-manrope font-700 text-white text-base mb-2">Dependência 100% do Instagram</h3>
+          <p class="font-inter text-zinc-500 text-sm leading-relaxed">
+            Com zero site e zero presença no Google, seu escritório sobrevive exclusivamente do alcance orgânico de uma plataforma controlada por um algoritmo. Um dia de queda pode significar um mês sem novos clientes.
+          </p>
+        </div>
 
-      <!-- Label -->
-      <div class="reveal">
-        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">01 — Diagnóstico</span>
+        <!-- Problema 3 -->
+        <div class="pilar-card bg-white/[0.02] border border-yellow-500/20 rounded-2xl p-6 reveal" style="transition-delay: 0.2s;">
+          <div class="w-10 h-10 rounded-xl bg-yellow-500/10 border border-yellow-500/20 flex items-center justify-center mb-4">
+            <iconify-icon icon="solar:link-broken-bold" class="text-yellow-400 text-xl"></iconify-icon>
+          </div>
+          <div class="inline-flex items-center gap-1 bg-yellow-500/10 border border-yellow-500/20 rounded-full px-2.5 py-1 mb-3">
+            <span class="text-yellow-400 font-inter font-600 text-xs">Oportunidade Perdida</span>
+          </div>
+          <h3 class="font-manrope font-700 text-white text-base mb-2">2.577 Seguidores Sem Caminho</h3>
+          <p class="font-inter text-zinc-500 text-sm leading-relaxed">
+            Sua bio não tem link. Sua conta não é Business. Quem quer contratar precisa te procurar manualmente. A maioria desiste no meio do caminho. Você conquista audiência, mas não converte em receita.
+          </p>
+        </div>
+
       </div>
 
-      <!-- Título -->
-      <div class="mt-4 mb-4 reveal">
-        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
-          O Que os Números<br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Revelam Sobre Você</span>
-        </h2>
-      </div>
+      <!-- Cost callout -->
+      <div class="mt-8 bg-[#5070b0]/[0.06] border border-[
+<!-- ═══════════════════════════════════════════════════════════
+     SEÇÃO JORNADA
+═══════════════════════════════════════════════════════════ -->
+<section id="jornada" style="padding:120px 0;position:relative;overflow:hidden;">
 
-      <p class="text-zinc-400 font-inter text-base max-w-2xl mb-14 leading-relaxed reveal">
-        Fizemos uma análise completa da sua presença digital antes de chegar até você. O que encontramos precisa ser dito com clareza — porque você merece saber exatamente onde está perdendo clientes agora, hoje.
+  <!-- Background decoration -->
+  <div style="position:absolute;top:50%;left:-200px;transform:translateY(-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(59,130,246,0.07) 0%,transparent 70%);pointer-events:none;"></div>
+  <div style="position:absolute;top:20%;right:-150px;width:350px;height:350px;background:radial-gradient(circle,rgba(96,165,250,0.05) 0%,transparent 70%);pointer-events:none;"></div>
+
+  <div class="container" style="max-width:1100px;margin:0 auto;padding:0 32px;">
+
+    <!-- Section Header -->
+    <div class="reveal" style="text-align:center;margin-bottom:80px;">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.3);border-radius:100px;padding:6px 18px;margin-bottom:24px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;animation:pulse-dot 2s infinite;"></span>
+        <span style="font-family:'Inter',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#60a5fa;">Sua Transformação</span>
+      </div>
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(32px,4vw,48px);font-weight:800;color:#f0f9ff;line-height:1.15;margin:0 0 16px;">
+        Do Diagnóstico à <em style="font-style:italic;color:#3b82f6;">Referência Digital</em>
+      </h2>
+      <p style="font-family:'Inter',sans-serif;font-size:17px;color:rgba(148,163,184,0.9);max-width:560px;margin:0 auto;line-height:1.7;">
+        Cada etapa foi projetada para gerar resultado o mais rápido possível, sem abrir mão da qualidade.
       </p>
-
-      <!-- Metric Cards -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-        <div class="metric-card border border-[#5070b0]/20 rounded-2xl p-6 text-center reveal" style="animation: pulse-glow 3s ease-in-out infinite;">
-          <div class="glow-number font-manrope font-bold text-5xl text-[#5070b0] mb-2">12</div>
-          <div class="text-zinc-400 font-inter text-xs uppercase tracking-wider">Pontuação Digital<br><span class="text-zinc-600">de 100</span></div>
-        </div>
-        <div class="metric-card border border-[#5070b0]/20 rounded-2xl p-6 text-center reveal">
-          <div class="glow-number font-manrope font-bold text-5xl text-[#5070b0] mb-2">0</div>
-          <div class="text-zinc-400 font-inter text-xs uppercase tracking-wider">Presença<br>no Google</div>
-        </div>
-        <div class="metric-card border border-[#5070b0]/20 rounded-2xl p-6 text-center reveal">
-          <div class="glow-number font-manrope font-bold text-4xl text-[#5070b0] mb-2">2.576</div>
-          <div class="text-zinc-400 font-inter text-xs uppercase tracking-wider">Seguidores<br>Desperdiçados</div>
-        </div>
-        <div class="metric-card border border-[#5070b0]/20 rounded-2xl p-6 text-center reveal">
-          <div class="glow-number font-manrope font-bold text-5xl text-[#5070b0] mb-2">0</div>
-          <div class="text-zinc-400 font-inter text-xs uppercase tracking-wider">Leads<br>Rastreáveis</div>
-        </div>
-      </div>
-
-      <!-- Problem Cards -->
-      <div class="grid md:grid-cols-3 gap-6 mb-10">
-
-        <!-- Problem 1 -->
-        <div class="border border-red-500/20 bg-red-950/10 rounded-2xl p-6 reveal">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0">
-              <iconify-icon icon="lucide:x" width="16" class="text-red-400"></iconify-icon>
-            </div>
-            <span class="text-red-400 font-inter font-semibold text-sm">Problema Crítico</span>
-          </div>
-          <h3 class="font-manrope font-bold text-white text-lg mb-3">Você não existe no Google</h3>
-          <p class="text-zinc-400 font-inter text-sm leading-relaxed">
-            Seu <strong class="text-white">Google Meu Negócio não está cadastrado</strong>. Quando alguém em Cuiabá busca ajuda de um advogado de família, ela encontra seus concorrentes. Não você.
-          </p>
-          <div class="mt-4 pt-4 border-t border-red-500/10">
-            <span class="text-red-400 text-xs font-inter font-medium">Buscas perdidas por dia →</span>
-            <span class="text-white text-xs font-inter font-bold ml-1">dezenas</span>
-          </div>
-        </div>
-
-        <!-- Problem 2 -->
-        <div class="border border-red-500/20 bg-red-950/10 rounded-2xl p-6 reveal">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0">
-              <iconify-icon icon="lucide:x" width="16" class="text-red-400"></iconify-icon>
-            </div>
-            <span class="text-red-400 font-inter font-semibold text-sm">Problema Crítico</span>
-          </div>
-          <h3 class="font-manrope font-bold text-white text-lg mb-3">Sem site, sem endereço digital</h3>
-          <p class="text-zinc-400 font-inter text-sm leading-relaxed">
-            Nenhum site ou landing page vinculado ao seu nome. Sem isso, <strong class="text-white">não há como ranquear no Google</strong> nem como o cliente dar o próximo passo com você.
-          </p>
-          <div class="mt-4 pt-4 border-t border-red-500/10">
-            <span class="text-red-400 text-xs font-inter font-medium">Credibilidade perdida →</span>
-            <span class="text-white text-xs font-inter font-bold ml-1">toda semana</span>
-          </div>
-        </div>
-
-        <!-- Problem 3 -->
-        <div class="border border-red-500/20 bg-red-950/10 rounded-2xl p-6 reveal">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-8 h-8 rounded-full bg-red-500/20 flex items-center justify-center flex-shrink-0">
-              <iconify-icon icon="lucide:x" width="16" class="text-red-400"></iconify-icon>
-            </div>
-            <span class="text-red-400 font-inter font-semibold text-sm">Problema Crítico</span>
-          </div>
-          <h3 class="font-manrope font-bold text-white text-lg mb-3">2.576 seguidores desperdiçados</h3>
-          <p class="text-zinc-400 font-inter text-sm leading-relaxed">
-            Sem perfil Business, sem link na bio, sem Pixel instalado. Seus seguidores passam pelo perfil e <strong class="text-white">vão embora sem um próximo passo</strong> definido.
-          </p>
-          <div class="mt-4 pt-4 border-t border-red-500/10">
-            <span class="text-red-400 text-xs font-inter font-medium">Conversões mensuráveis →</span>
-            <span class="text-white text-xs font-inter font-bold ml-1">zero</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Custo real -->
-      <div class="border border-[#5070b0]/20 bg-[#5070b0]/5 rounded-2xl p-8 reveal">
-        <div class="flex items-start gap-4">
-          <div class="w-10 h-10 rounded-full bg-[#5070b0]/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-            <iconify-icon icon="lucide:trending-up" width="18" class="text-[#5070b0]"></iconify-icon>
-          </div>
-          <div>
-            <h3 class="font-manrope font-bold text-white text-xl mb-3">O Custo Real de Ficar Parado</h3>
-            <div class="grid md:grid-cols-3 gap-4 text-sm font-inter text-zinc-400">
-              <p>Cada dia sem Google Meu Negócio é um dia em que buscas de altíssima intenção em Cuiabá convertem para seus concorrentes.</p>
-              <p>Cada semana sem site é uma semana em que sua credibilidade digital fica aquém das suas credenciais reais como formado na UFMT.</p>
-              <p>Cada mês sem estrutura de captação é um mês em que seus <span class="text-white font-semibold">2.576 seguidores</span> não geram uma única consulta rastreável.</p>
-            </div>
-            <p class="mt-4 text-[#5070b0] font-inter font-semibold text-sm">O investimento em não agir tem um custo — ele só não aparece em nenhuma fatura.</p>
-          </div>
-        </div>
-      </div>
-
     </div>
-  </section>
 
-  <!-- ========== SEÇÃO POR QUE É DIFERENTE ========== -->
-  <section class="relative z-10 py-24 px-6 bg-gradient-to-b from-transparent via-[#0a1128]/30 to-transparent">
-    <div class="max-w-5xl mx-auto">
+    <!-- Timeline -->
+    <div style="position:relative;">
 
-      <div class="section-divider mb-16 reveal"></div>
+      <!-- Vertical line -->
+      <div class="timeline-line" style="position:absolute;left:50%;top:0;bottom:0;width:2px;background:linear-gradient(180deg,transparent 0%,rgba(59,130,246,0.4) 10%,rgba(59,130,246,0.4) 90%,transparent 100%);transform:translateX(-50%);"></div>
 
-      <div class="reveal">
-        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">02 — Comparativo</span>
+      <!-- Step 1 -->
+      <div class="reveal" style="display:flex;align-items:center;gap:0;margin-bottom:64px;position:relative;">
+        <div style="flex:1;padding-right:52px;text-align:right;">
+          <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(59,130,246,0.2);border-radius:20px;padding:32px;backdrop-filter:blur(8px);transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(59,130,246,0.5)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(59,130,246,0.2)';this.style.transform='translateY(0)'">
+            <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px;">Situação Atual</div>
+            <h3 style="font-family:'Manrope',sans-serif;font-size:22px;font-weight:800;color:#f0f9ff;margin:0 0 12px;">Score 12/100</h3>
+            <p style="font-family:'Inter',sans-serif;font-size:15px;color:rgba(148,163,184,0.85);margin:0;line-height:1.6;">Invisível no Google, sem site, sem rastreamento, 2.577 seguidores sem caminho para virar clientes.</p>
+          </div>
+        </div>
+        <!-- Dot -->
+        <div style="position:absolute;left:50%;transform:translateX(-50%);z-index:10;">
+          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#1e3a5f,#1d4ed8);border:3px solid rgba(59,130,246,0.5);display:flex;align-items:center;justify-content:center;box-shadow:0 0 24px rgba(59,130,246,0.3);">
+            <span style="font-family:'Manrope',sans-serif;font-size:18px;font-weight:900;color:#93c5fd;">1</span>
+          </div>
+        </div>
+        <div style="flex:1;padding-left:52px;">
+          <div style="font-family:'Inter',sans-serif;font-size:13px;color:rgba(100,116,139,0.7);padding-top:8px;">Hoje</div>
+        </div>
       </div>
 
-      <div class="mt-4 mb-12 reveal">
-        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
-          Antes vs. Depois da<br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Nossa Estrutura</span>
-        </h2>
+      <!-- Connector arrow down -->
+      <div style="display:flex;justify-content:center;margin-bottom:32px;position:relative;z-index:5;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:1px;height:20px;background:rgba(59,130,246,0.3);"></div>
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 1L8 9L15 1" stroke="rgba(59,130,246,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
       </div>
 
-      <div class="rounded-3xl border border-white/10 bg-black/40 backdrop-blur-sm overflow-hidden reveal">
-        <table class="compare-table w-full">
-          <thead>
-            <tr class="bg-[#5070b0]/10">
-              <th style="width:40%">Situação</th>
-              <th style="width:30%">Hoje (sem estrutura)</th>
-              <th style="width:30%">Com a Avestra</th>
-            </tr>
-          </thead>
-          <tbody class="font-inter">
-            <tr>
-              <td class="text-zinc-300 font-medium">Visibilidade no Google</td>
-              <td class="bad flex items-center gap-2"><iconify-icon icon="lucide:x" width="14"></iconify-icon> Inexistente</td>
-              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Aparece nas buscas locais</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Google Maps</td>
-              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Não cadastrado</td>
-              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Perfil completo e verificado</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Site profissional</td>
-              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Não existe</td>
-              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Landing page otimizada para SEO</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Instagram Business</td>
-              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Conta pessoal, sem métricas</td>
-              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Business com analytics e anúncios</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Link na bio</td>
-              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Não existe</td>
-              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Página estratégica com WhatsApp direto</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Facebook Pixel</td>
-              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Não instalado</td>
-              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Rastreamento completo ativo</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Leads rastreáveis</td>
-              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Zero mensuráveis</td>
-              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>15–35 leads/mês no mês 3</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Campanhas pagas</td>
-              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Impossível sem estrutura</td>
-              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Meta Ads + Google Ads geolocalizados</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Avaliações no Google</td>
-              <td class="bad"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Zero</td>
-              <td class="good"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Estratégia de acúmulo contínuo</td>
-            </tr>
-            <tr class="bg-[#5070b0]/5">
-              <td class="text-zinc-300 font-medium font-semibold">Resultado geral</td>
-              <td class="bad font-semibold"><iconify-icon icon="lucide:x" width="14" class="inline mr-1"></iconify-icon>Invisível para clientes</td>
-              <td class="good font-semibold"><iconify-icon icon="lucide:check" width="14" class="inline mr-1"></iconify-icon>Referência em Direito de Família em Cuiabá</td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Step 2 -->
+      <div class="reveal" style="display:flex;align-items:center;gap:0;margin-bottom:64px;position:relative;">
+        <div style="flex:1;padding-right:52px;text-align:right;">
+          <div style="font-family:'Inter',sans-serif;font-size:13px;color:rgba(100,116,139,0.7);padding-top:8px;text-align:right;">Semana 1</div>
+        </div>
+        <!-- Dot -->
+        <div style="position:absolute;left:50%;transform:translateX(-50%);z-index:10;">
+          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#1e3a5f,#1d4ed8);border:3px solid rgba(59,130,246,0.5);display:flex;align-items:center;justify-content:center;box-shadow:0 0 24px rgba(59,130,246,0.3);">
+            <span style="font-family:'Manrope',sans-serif;font-size:18px;font-weight:900;color:#93c5fd;">2</span>
+          </div>
+        </div>
+        <div style="flex:1;padding-left:52px;">
+          <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(59,130,246,0.2);border-radius:20px;padding:32px;backdrop-filter:blur(8px);transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(59,130,246,0.5)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(59,130,246,0.2)';this.style.transform='translateY(0)'">
+            <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px;">Fase Fundação</div>
+            <h3 style="font-family:'Manrope',sans-serif;font-size:22px;font-weight:800;color:#f0f9ff;margin:0 0 12px;">Você Aparece no Google</h3>
+            <p style="font-family:'Inter',sans-serif;font-size:15px;color:rgba(148,163,184,0.85);margin:0;line-height:1.6;">Google Meu Negócio ativo, Instagram com link funcional, Pixel instalado. Presença digital começa a existir.</p>
+          </div>
+        </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- ========== SEÇÃO A SOLUÇÃO / PILARES ========== -->
-  <section id="solucao" class="relative z-10 py-24 px-6">
-    <div class="max-w-5xl mx-auto">
-
-      <div class="section-divider mb-16 reveal"></div>
-
-      <div class="reveal">
-        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">03 — A Solução</span>
+      <!-- Connector -->
+      <div style="display:flex;justify-content:center;margin-bottom:32px;position:relative;z-index:5;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:1px;height:20px;background:rgba(59,130,246,0.3);"></div>
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 1L8 9L15 1" stroke="rgba(59,130,246,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
       </div>
 
-      <div class="mt-4 mb-4 reveal">
-        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
-          Sua Máquina de<br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Captação de Clientes</span>
-        </h2>
+      <!-- Step 3 -->
+      <div class="reveal" style="display:flex;align-items:center;gap:0;margin-bottom:64px;position:relative;">
+        <div style="flex:1;padding-right:52px;text-align:right;">
+          <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(59,130,246,0.2);border-radius:20px;padding:32px;backdrop-filter:blur(8px);transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(59,130,246,0.5)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(59,130,246,0.2)';this.style.transform='translateY(0)'">
+            <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px;">Fase Construção</div>
+            <h3 style="font-family:'Manrope',sans-serif;font-size:22px;font-weight:800;color:#f0f9ff;margin:0 0 12px;">Site no Ar, Leads Chegando</h3>
+            <p style="font-family:'Inter',sans-serif;font-size:15px;color:rgba(148,163,184,0.85);margin:0;line-height:1.6;">Site profissional, landing pages por área de atuação, formulários integrados ao WhatsApp e rastreamento completo funcionando.</p>
+          </div>
+        </div>
+        <!-- Dot -->
+        <div style="position:absolute;left:50%;transform:translateX(-50%);z-index:10;">
+          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#1e3a5f,#1d4ed8);border:3px solid rgba(59,130,246,0.5);display:flex;align-items:center;justify-content:center;box-shadow:0 0 24px rgba(59,130,246,0.3);">
+            <span style="font-family:'Manrope',sans-serif;font-size:18px;font-weight:900;color:#93c5fd;">3</span>
+          </div>
+        </div>
+        <div style="flex:1;padding-left:52px;">
+          <div style="font-family:'Inter',sans-serif;font-size:13px;color:rgba(100,116,139,0.7);padding-top:8px;">Semanas 2–3</div>
+        </div>
       </div>
 
-      <p class="text-zinc-400 font-inter text-base max-w-2xl mb-14 leading-relaxed reveal">
-        Não vendemos serviços avulsos. Construímos a infraestrutura digital completa que transforma sua autoridade jurídica em consultas agendadas — de forma previsível e escalável.
+      <!-- Connector -->
+      <div style="display:flex;justify-content:center;margin-bottom:32px;position:relative;z-index:5;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:1px;height:20px;background:rgba(59,130,246,0.3);"></div>
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 1L8 9L15 1" stroke="rgba(59,130,246,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="reveal" style="display:flex;align-items:center;gap:0;margin-bottom:64px;position:relative;">
+        <div style="flex:1;padding-right:52px;text-align:right;">
+          <div style="font-family:'Inter',sans-serif;font-size:13px;color:rgba(100,116,139,0.7);padding-top:8px;text-align:right;">Semana 4</div>
+        </div>
+        <!-- Dot -->
+        <div style="position:absolute;left:50%;transform:translateX(-50%);z-index:10;">
+          <div style="width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#1e3a5f,#1d4ed8);border:3px solid rgba(59,130,246,0.5);display:flex;align-items:center;justify-content:center;box-shadow:0 0 24px rgba(59,130,246,0.3);">
+            <span style="font-family:'Manrope',sans-serif;font-size:18px;font-weight:900;color:#93c5fd;">4</span>
+          </div>
+        </div>
+        <div style="flex:1;padding-left:52px;">
+          <div style="background:rgba(15,23,42,0.8);border:1px solid rgba(59,130,246,0.2);border-radius:20px;padding:32px;backdrop-filter:blur(8px);transition:border-color 0.3s,transform 0.3s;" onmouseover="this.style.borderColor='rgba(59,130,246,0.5)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(59,130,246,0.2)';this.style.transform='translateY(0)'">
+            <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#3b82f6;margin-bottom:10px;">Fase Ativação</div>
+            <h3 style="font-family:'Manrope',sans-serif;font-size:22px;font-weight:800;color:#f0f9ff;margin:0 0 12px;">Anúncios no Ar</h3>
+            <p style="font-family:'Inter',sans-serif;font-size:15px;color:rgba(148,163,184,0.85);margin:0;line-height:1.6;">Campanhas pagas ativas no Meta e Google Ads. Primeiros leads pagos chegando. Infraestrutura 100% operacional.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connector -->
+      <div style="display:flex;justify-content:center;margin-bottom:32px;position:relative;z-index:5;">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+          <div style="width:1px;height:20px;background:rgba(59,130,246,0.3);"></div>
+          <svg width="16" height="10" viewBox="0 0 16 10" fill="none"><path d="M1 1L8 9L15 1" stroke="rgba(59,130,246,0.5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+
+      <!-- Step 5 — Final -->
+      <div class="reveal" style="position:relative;display:flex;justify-content:center;">
+        <!-- Dot -->
+        <div style="position:absolute;left:50%;top:0;transform:translateX(-50%);z-index:10;">
+          <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1d4ed8,#3b82f6);border:3px solid rgba(96,165,250,0.7);display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px rgba(59,130,246,0.5);">
+            <span style="font-size:22px;">🏆</span>
+          </div>
+        </div>
+        <div style="max-width:560px;width:100%;padding-top:80px;text-align:center;">
+          <div style="background:linear-gradient(135deg,rgba(29,78,216,0.2),rgba(59,130,246,0.1));border:1px solid rgba(59,130,246,0.4);border-radius:24px;padding:40px 32px;">
+            <div style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#60a5fa;margin-bottom:12px;">D+31 em diante</div>
+            <h3 style="font-family:'Manrope',sans-serif;font-size:26px;font-weight:900;color:#f0f9ff;margin:0 0 14px;">Walter Enore: Referência Digital em Cuiabá</h3>
+            <p style="font-family:'Inter',sans-serif;font-size:15px;color:rgba(148,163,184,0.9);margin:0;line-height:1.7;">Crescimento previsível, agenda cheia, clientes chegando pelo Google, Instagram e anúncios — enquanto você foca no que faz de melhor: advocacia.</p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /timeline -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SEÇÃO CRONOGRAMA
+═══════════════════════════════════════════════════════════ -->
+<section id="cronograma" style="padding:120px 0;background:rgba(7,11,20,0.6);position:relative;overflow:hidden;">
+
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 80% 50% at 50% 0%,rgba(29,78,216,0.08) 0%,transparent 70%);pointer-events:none;"></div>
+
+  <div class="container" style="max-width:1100px;margin:0 auto;padding:0 32px;">
+
+    <!-- Header -->
+    <div class="reveal" style="text-align:center;margin-bottom:64px;">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(59,130,246,0.1);border:1px solid rgba(59,130,246,0.3);border-radius:100px;padding:6px 18px;margin-bottom:24px;">
+        <span style="width:6px;height:6px;border-radius:50%;background:#3b82f6;display:inline-block;"></span>
+        <span style="font-family:'Inter',sans-serif;font-size:12px;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#60a5fa;">Execução</span>
+      </div>
+      <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(30px,4vw,46px);font-weight:800;color:#f0f9ff;line-height:1.15;margin:0 0 16px;">
+        Do Zero ao Funcionando em <em style="font-style:italic;color:#3b82f6;">30 Dias</em>
+      </h2>
+      <p style="font-family:'Inter',sans-serif;font-size:17px;color:rgba(148,163,184,0.85);max-width:520px;margin:0 auto;line-height:1.7;">
+        Um cronograma estruturado para que cada semana entregue resultados concretos.
       </p>
-
-      <!-- Bento Grid Pilares -->
-      <div class="pilares-grid grid lg:grid-cols-3 gap-6">
-
-        <!-- Pilar 1 — Grande (col-span-2 row-span-2) -->
-        <div class="pilar-card lg:col-span-2 lg:row-span-2 border border-[#5070b0]/20 bg-[#5070b0]/5 rounded-3xl p-8 reveal">
-          <div class="flex items-start justify-between mb-6">
-            <div class="glow-number font-manrope font-bold text-6xl text-[#5070b0]/30">01</div>
-            <div class="w-12 h-12 rounded-2xl bg-[#5070b0]/20 flex items-center justify-center">
-              <iconify-icon icon="lucide:globe" width="24" class="text-[#5070b0]"></iconify-icon>
-            </div>
-          </div>
-          <h3 class="font-manrope font-bold text-white text-2xl mb-3">Site Profissional com Foco em Conversão</h3>
-          <p class="text-zinc-400 font-inter text-sm leading-relaxed mb-6">
-            Landing page profissional desenvolvida especificamente para o Direito de Família em Cuiabá — seu endereço digital permanente na internet.
-          </p>
-          <ul class="space-y-3 mb-8">
-            <li class="flex items-start gap-3 text-zinc-300 font-inter text-sm">
-              <iconify-icon icon="lucide:check" width="16" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Ranqueamento para termos como <em>"advogado direito de família Cuiabá"</em>, <em>"divórcio Cuiabá"</em>, <em>"guarda de filhos Cuiabá"</em>
-            </li>
-            <li class="flex items-start gap-3 text-zinc-300 font-inter text-sm">
-              <iconify-icon icon="lucide:check" width="16" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Botão de WhatsApp com mensagem pré-formatada para facilitar o primeiro contato
-            </li>
-            <li class="flex items-start gap-3 text-zinc-300 font-inter text-sm">
-              <iconify-icon icon="lucide:check" width="16" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Formulário de agendamento de consulta integrado e rastreável
-            </li>
-            <li class="flex items-start gap-3 text-zinc-300 font-inter text-sm">
-              <iconify-icon icon="lucide:check" width="16" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Design de credibilidade alinhado à sua trajetória na UFMT
-            </li>
-          </ul>
-          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-2">
-            <iconify-icon icon="lucide:trending-up" width="14" class="text-green-400"></iconify-icon>
-            <span class="text-green-400 font-inter text-xs font-semibold">Captação de leads 24h/dia, mesmo em audiência</span>
-          </div>
-        </div>
-
-        <!-- Pilar 2 -->
-        <div class="pilar-card border border-white/10 bg-white/3 rounded-3xl p-6 reveal">
-          <div class="glow-number font-manrope font-bold text-4xl text-[#5070b0]/30 mb-4">02</div>
-          <div class="w-10 h-10 rounded-xl bg-[#5070b0]/20 flex items-center justify-center mb-4">
-            <iconify-icon icon="lucide:map-pin" width="20" class="text-[#5070b0]"></iconify-icon>
-          </div>
-          <h3 class="font-manrope font-bold text-white text-lg mb-3">Google Meu Negócio Otimizado</h3>
-          <ul class="space-y-2 mb-5">
-            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
-              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Cadastro completo + verificação
-            </li>
-            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
-              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Aparece no Google Maps de Cuiabá
-            </li>
-            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
-              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Estratégia de avaliações públicas
-            </li>
-          </ul>
-          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-3 py-1.5">
-            <span class="text-green-400 font-inter text-xs font-semibold">Aparecer no momento da intenção de compra</span>
-          </div>
-        </div>
-
-        <!-- Pilar 3 -->
-        <div class="pilar-card border border-white/10 bg-white/3 rounded-3xl p-6 reveal">
-          <div class="glow-number font-manrope font-bold text-4xl text-[#5070b0]/30 mb-4">03</div>
-          <div class="w-10 h-10 rounded-xl bg-[#5070b0]/20 flex items-center justify-center mb-4">
-            <iconify-icon icon="lucide:instagram" width="20" class="text-[#5070b0]"></iconify-icon>
-          </div>
-          <h3 class="font-manrope font-bold text-white text-lg mb-3">Instagram Profissional Reestruturado</h3>
-          <div class="bg-black/40 rounded-xl p-3 mb-4 border border-white/10">
-            <p class="text-zinc-300 font-inter text-xs leading-relaxed">
-              ⚖️ Advogado | Direito de Família, Civil e Saúde<br>
-              📍 Cuiabá - MT | UFMT<br>
-              📲 Consulta pelo link abaixo 👇
-            </p>
-          </div>
-          <ul class="space-y-2 mb-5">
-            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
-              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Migração para conta Business
-            </li>
-            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
-              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Link estratégico + WhatsApp direto
-            </li>
-            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
-              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Habilitação para Meta Ads
-            </li>
-          </ul>
-          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-3 py-1.5">
-            <span class="text-green-400 font-inter text-xs font-semibold">2.576 seguidores com caminho para consulta</span>
-          </div>
-        </div>
-
-        <!-- Pilar 4 -->
-        <div class="pilar-card border border-white/10 bg-white/3 rounded-3xl p-6 reveal">
-          <div class="glow-number font-manrope font-bold text-4xl text-[#5070b0]/30 mb-4">04</div>
-          <div class="w-10 h-10 rounded-xl bg-[#5070b0]/20 flex items-center justify-center mb-4">
-            <iconify-icon icon="lucide:bar-chart-2" width="20" class="text-[#5070b0]"></iconify-icon>
-          </div>
-          <h3 class="font-manrope font-bold text-white text-lg mb-3">Pixel e Rastreamento Analytics</h3>
-          <ul class="space-y-2 mb-5">
-            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
-              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Facebook Pixel no site
-            </li>
-            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
-              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Google Analytics configurado
-            </li>
-            <li class="flex items-start gap-2 text-zinc-400 font-inter text-xs">
-              <iconify-icon icon="lucide:check" width="14" class="text-green-400 mt-0.5 flex-shrink-0"></iconify-icon>
-              Remarketing e públicos personalizados
-            </li>
-          </ul>
-          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-3 py-1.5">
-            <span class="text-green-400 font-inter text-xs font-semibold">Decisões baseadas em dados reais</span>
-          </div>
-        </div>
-
-        <!-- Pilar 5 — Gestão de Anúncios -->
-        <div class="pilar-card lg:col-span-2 border border-[#5070b0]/20 bg-gradient-to-br from-[#5070b0]/10 to-transparent rounded-3xl p-8 reveal">
-          <div class="flex items-start justify-between mb-6">
-            <div class="glow-number font-manrope font-bold text-6xl text-[#5070b0]/30">05</div>
-            <div class="w-12 h-12 rounded-2xl bg-[#5070b0]/20 flex items-center justify-center">
-              <iconify-icon icon="lucide:zap" width="24" class="text-[#5070b0]"></iconify-icon>
-            </div>
-          </div>
-          <h3 class="font-manrope font-bold text-white text-2xl mb-3">Gestão de Anúncios Geolocalizados</h3>
-          <p class="text-zinc-400 font-inter text-sm leading-relaxed mb-6">
-            Campanhas pagas segmentadas para Cuiabá, focadas em Direito de Família — Meta Ads + Google Ads com relatórios mensais claros.
-          </p>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-            <div class="bg-black/30 rounded-xl p-3 text-center border border-white/5">
-              <div class="text-[#5070b0] font-manrope font-bold text-lg">100%</div>
-              <div class="text-zinc-500 font-inter text-xs">Cuiabá-MT</div>
-            </div>
-            <div class="bg-black/30 rounded-xl p-3 text-center border border-white/5">
-              <div class="text-[#5070b0] font-manrope font-bold text-lg">Meta</div>
-              <div class="text-zinc-500 font-inter text-xs">Insta + Face</div>
-            </div>
-            <div class="bg-black/30 rounded-xl p-3 text-center border border-white/5">
-              <div class="text-[#5070b0] font-manrope font-bold text-lg">Google</div>
-              <div class="text-zinc-500 font-inter text-xs">Busca ativa</div>
-            </div>
-            <div class="bg-black/30 rounded-xl p-3 text-center border border-white/5">
-              <div class="text-[#5070b0] font-manrope font-bold text-lg">Relatório</div>
-              <div class="text-zinc-500 font-inter text-xs">Mensal</div>
-            </div>
-          </div>
-          <div class="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/20 rounded-full px-4 py-2">
-            <iconify-icon icon="lucide:trending-up" width="14" class="text-green-400"></iconify-icon>
-            <span class="text-green-400 font-inter text-xs font-semibold">Previsibilidade: invista R$ X e saiba quantas consultas virão</span>
-          </div>
-        </div>
-
-      </div>
     </div>
-  </section>
 
-  <!-- ========== SEÇÃO JORNADA / RESULTADOS ESPERADOS ========== -->
-  <section class="relative z-10 py-24 px-6 bg-gradient-to-b from-transparent via-[#0a1128]/20 to-transparent">
-    <div class="max-w-5xl mx-auto">
+    <!-- Grid 2x2 -->
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(460px,1fr));gap:28px;">
 
-      <div class="section-divider mb-16 reveal"></div>
-
-      <div class="reveal">
-        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">04 — Resultados Esperados</span>
-      </div>
-
-      <div class="mt-4 mb-12 reveal">
-        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
-          Projeções Conservadoras<br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">Mês a Mês</span>
-        </h2>
-      </div>
-
-      <!-- Tabela de resultados -->
-      <div class="rounded-3xl border border-white/10 bg-black/40 backdrop-blur-sm overflow-hidden mb-10 reveal">
-        <table class="compare-table w-full">
-          <thead>
-            <tr class="bg-[#5070b0]/10">
-              <th style="width:40%">Indicador</th>
-              <th style="width:20%">Mês 1</th>
-              <th style="width:20%">Mês 2</th>
-              <th style="width:20%">Mês 3</th>
-            </tr>
-          </thead>
-          <tbody class="font-inter">
-            <tr>
-              <td class="text-zinc-300 font-medium">Aparições em buscas locais (GMB)</td>
-              <td class="text-amber-400 font-medium">Primeiras aparições</td>
-              <td class="text-[#5070b0] font-medium">50–150/mês</td>
-              <td class="good font-semibold">200–400/mês</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Visitas ao site</td>
-              <td class="text-amber-400 font-medium">Estrutura no ar</td>
-              <td class="text-[#5070b0] font-medium">80–200/mês</td>
-              <td class="good font-semibold">200–500/mês</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Leads gerados (WhatsApp + form.)</td>
-              <td class="text-amber-400 font-medium">3–8 leads</td>
-              <td class="text-[#5070b0] font-medium">8–20 leads</td>
-              <td class="good font-semibold">15–35 leads</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Cliques no link da bio (Instagram)</td>
-              <td class="text-amber-400 font-medium">+40% vs. hoje</td>
-              <td class="text-[#5070b0] font-medium">Crescimento contínuo</td>
-              <td class="good font-semibold">Base consolidada</td>
-            </tr>
-            <tr>
-              <td class="text-zinc-300 font-medium">Avaliações no Google</td>
-              <td class="text-amber-400 font-medium">0 → primeiras 5</td>
-              <td class="text-[#5070b0] font-medium">5–15</td>
-              <td class="good font-semibold">15–30</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="bg-[#5070b0]/10 border border-[#5070b0]/20 rounded-2xl p-6 reveal">
-        <div class="flex items-start gap-3">
-          <iconify-icon icon="lucide:info" width="18" class="text-[#5070b0] flex-shrink-0 mt-0.5"></iconify-icon>
-          <p class="text-zinc-300 font-inter text-sm leading-relaxed">
-            <strong class="text-white">Nota importante:</strong> Esses números consideram apenas tráfego orgânico e estrutura básica de captação. Com anúncios pagos ativos, os números de lead podem dobrar ou triplicar já no primeiro mês. Uma única consulta convertida em cliente já representa retorno sobre o investimento desta proposta.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ========== SEÇÃO CRONOGRAMA ========== -->
-  <section id="cronograma" class="relative z-10 py-24 px-6">
-    <div class="max-w-5xl mx-auto">
-
-      <div class="section-divider mb-16 reveal"></div>
-
-      <div class="reveal">
-        <span class="text-[#5070b0] font-inter font-semibold text-xs uppercase tracking-[0.3em]">05 — Cronograma</span>
-      </div>
-
-      <div class="mt-4 mb-12 reveal">
-        <h2 class="font-manrope font-bold text-4xl md:text-5xl leading-tight text-white">
-          Implementação em<br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#5070b0] to-[#7090d0]">4 Fases Claras</span>
-        </h2>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6">
-
-        <!-- Fase 1 -->
-        <div class="border border-white/10 rounded-3xl overflow-hidden reveal">
-          <div class="h-1.5 bg-gradient-to-r from-[#5070b0] to-[#7090d0]"></div>
-          <div class="p-8">
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-[#5070b0] font-inter font-bold text-xs uppercase tracking-widest">Fase 1</span>
-              <span class="text-zinc-500 font-inter text-xs border border-zinc-700 rounded-full px-3 py-1">D+1 a D+7</span>
-            </div>
-            <h3 class="font-manrope font-bold text-white text-xl mb-2">Fundação</h3>
-            <p class="text-zinc-500 font-inter text-xs italic mb-6">"Sua presença digital começa a existir"</p>
-            <ul class="space-y-3">
-              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
-                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
-                </div>
-                Reunião de onboarding e coleta de informações
-              </li>
-              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
-                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
-                </div>
-                Criação e verificação do Google Meu Negócio
-              </li>
-              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
-                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
-                </div>
-                Migração do Instagram para Business
-              </li>
-              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
-                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
-                </div>
-                Reescrita da bio + link estratégico
-              </li>
-              <li class="flex items-start gap-3 text-zinc-400 font-inter text-sm">
-                <div class="w-5 h-5 rounded-full bg-[#5070b0]/20 border border-[#5070b0]/40 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <iconify-icon icon="lucide:check" width="11" class="text-[#5070b0]"></iconify-icon>
-                </div>
-                Instalação do Facebook Pixel e Google Analytics
-              </li>
-            </ul>
-            <div class="mt-6 pt-6 border-t border-white/5">
-              <div class="flex items-center gap-2">
-                <iconify-icon icon="lucide:flag" width="14" class="text-amber-400"></iconify-icon>
-                <span class="text-amber-400 font-inter text-xs font-semibold">Marco: Você já aparece no Google Maps e o Instagram converte</span>
+      <!-- Phase Card 1 -->
+      <div class="reveal" style="background:rgba(15,23,42,0.85);border:1px solid rgba(59,130,246,0.18);border-radius:24px;overflow:hidden;transition:transform 0.3s,border-color 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='rgba(59,130,246,0.4)';this.style.boxShadow='0 24px 64px rgba(29,78,216,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(59,130,246,0.18)';this.style.boxShadow='none'">
+        <!-- Top bar gradient -->
+        <div style="height:4px;background:linear-gradient(90deg,#1d4ed8,#3b82f6,#60a5fa);"></div>
+        <div style="padding:32px;">
+          <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px;">
+            <div>
+              <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(29,78,216,0.2);border:1px solid rgba(59,130,246,0.3);border-radius:8px;padding:4px 12px;margin-bottom:10px;">
+                <span style="font-family:'Inter',sans-serif;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#93c5fd;">Fase 1</span>
               </div>
+              <h3 style="font-family:'Manrope',sans-serif;font-size:22px;font-weight:800;color:#f0f9ff;margin:0;">Fundação</h3>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-family:'Inter',sans-serif;font-size:12px;font-weight:600;color:rgba(148,163,184,0.6);margin-bottom:4px;">Período</div>
+              <div style="font-family:'Manrope',sans-serif;font-size:15px;font-weight:700;color:#60a5fa;">D+1 a D+7</div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8.5 2.5" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span style="font-family:'Inter',sans-serif;font-size:14px;color:rgba(148,163,184,0.9);line-height:1.5;">Reunião de kickoff e coleta de materiais</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8.5 2.5" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span style="font-family:'Inter',sans-serif;font-size:14px;color:rgba(148,163,184,0.9);line-height:1.5;">Registro do domínio <strong style="color:#f0f9ff;">walterenore.adv.br</strong></span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8.5 2.5" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span style="font-family:'Inter',sans-serif;font-size:14px;color:rgba(148,163,184,0.9);line-height:1.5;">Otimização da bio e configuração Business no Instagram</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8.5 2.5" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span style="font-family:'Inter',sans-serif;font-size:14px;color:rgba(148,163,184,0.9);line-height:1.5;">Cadastro e verificação do Google Meu Negócio</span>
+            </div>
+            <div style="display:flex;align-items:flex-start;gap:12px;">
+              <div style="width:20px;height:20px;border-radius:50%;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px;">
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5L4.5 7.5L8.5 2.5" stroke="#4ade80" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <span style="font-family:'Inter',sans-serif;font-size:14px;color:rgba(148,163,184,0.9);line-height:1.5;">Instalação de Pixel do Meta e Google Analytics</span>
+            </div>
+          </div>
+          <!-- Result -->
+          <div style="margin-top:24px;padding:16px 20px;background:rgba(29,78,216,0.12);border:1px solid rgba(59,130,246,0.2);border-radius:12px;">
+            <div style="display:flex;align-items:flex-start;gap:10px;">
+              <span style="font-size:16px;flex-shrink:0;">→</span>
+              <span style="font-family:'Inter',sans-serif;font-size:13px;color:#93c5fd;font-weight:600;line-height:1.5;">Você já aparece no Google e o Instagram já tem link funcional.</span>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Fase 2 -->
-        <div class="border border-white/10 rounded-3xl overflow-hidden reveal">
-          <div class="h-1.5 bg-gradient-to-r from-[#5070b0] to-[#7090d0]"></div>
-          <div class="p-8">
-            <div class="flex items-center justify-between mb-4">
-              <span class="text-[#5070b0] font-inter font-bold text-xs uppercase tracking-widest">Fase 2</span>
-              <span class="text-zinc-500 font-inter text-xs border border-zinc-700 rounded-full px-3 py-1">D
+      <!-- Phase Card 2 -->
+      <div class="reveal" style="background:rgba(15,23,42,0.85);border:1px solid rgba(59,130,246,0.18);border-radius:24px;overflow:hidden;transition:transform 0.3s,border-color 0.3s,box-shadow 0.3s;" onmouseover="this.style.transform='translateY(-6px)';this.style.borderColor='rgba(59,130,246,0.4)';this.style.boxShadow='0 24px 64px rgba(29,78,216,0.2)'" onmouseout="this.style.transform='translateY(0)';this.style.borderColor='rgba(59,130,246,0.18)';this.style.boxShadow='none'">
+        <div style="
