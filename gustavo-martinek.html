@@ -3,29 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Proposta Comercial — Gustavo Martinek | Agência Avestra</title>
-  <meta name="description" content="Proposta exclusiva para Gustavo Martinek — De Especialista Invisível a Referência Digital." />
+  <title>Proposta Comercial — Gustavo Martinek Advocacia</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            'accent-blue': '#5070b0',
-          },
           fontFamily: {
             manrope: ['Manrope', 'sans-serif'],
             inter: ['Inter', 'sans-serif'],
           },
-        }
-      }
+          colors: {
+            accent: '#5070b0',
+          },
+        },
+      },
     }
   </script>
-  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; }
     :root { --accent-blue: #5070b0; --accent-blue-glow: rgba(80, 112, 176, 0.5); }
@@ -48,7 +46,7 @@
     .stars-1 { box-shadow: 234px 124px #fff, 654px 345px #fff, 876px 12px #fff, 1200px 800px #fff, 400px 1500px #fff, 1800px 200px #fff, 100px 1000px #fff, 900px 1900px #fff, 500px 600px #fff, 1400px 100px #fff, 300px 400px #fff, 1600px 1200px #fff, 50px 300px #fff, 750px 1100px #fff, 1100px 1600px #fff, 1700px 700px #fff, 200px 1800px #fff, 950px 50px #fff; }
     .stars-2 { box-shadow: 123px 456px #fff, 789px 234px #fff, 456px 890px #fff, 1100px 300px #fff, 200px 1200px #fff, 1500px 500px #fff, 600px 1700px #fff, 1300px 900px #fff, 350px 750px #fff, 850px 1400px #fff, 1650px 1050px #fff; }
     .stars-3 { box-shadow: 50px 50px rgba(80,112,176,0.3), 800px 400px rgba(80,112,176,0.2), 1400px 1000px rgba(80,112,176,0.25), 300px 1300px rgba(80,112,176,0.15), 1000px 200px rgba(80,112,176,0.2); }
-    .gradient-blur { position: fixed; z-index: 40; inset: 0 0 auto 0; height: 120px; pointer-events: none; background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent); backdrop-filter: blur(8px); mask-image: linear-gradient(to bottom, black, transparent); -webkit-mask-image: linear-gradient(to bottom, black, transparent); }
+    .gradient-blur { position: fixed; z-index: 40; inset: 0 0 auto 0; height: 120px; pointer-events: none; background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent); backdrop-filter: blur(8px); mask-image: linear-gradient(to bottom, black, transparent); }
     .selection-blue::selection { background: #5070b0; color: white; }
     .text-stroke { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1); color: transparent; }
     .pilar-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -69,898 +67,910 @@
     ::-webkit-scrollbar { width: 6px; } ::-webkit-scrollbar-track { background: #000; } ::-webkit-scrollbar-thumb { background: #5070b0; border-radius: 3px; }
     @media (max-width: 768px) { .pilares-grid { grid-template-columns: 1fr !important; } }
 
-    /* extras */
-    .star-layer { position: fixed; top: 0; left: 0; width: 1px; height: 1px; border-radius: 50%; }
-    .hero-gradient-orb { position: absolute; border-radius: 50%; filter: blur(120px); pointer-events: none; }
-    .problem-card { background: linear-gradient(135deg, rgba(255,60,60,0.04) 0%, rgba(10,17,40,0.0) 100%); transition: all 0.35s cubic-bezier(0.4,0,0.2,1); }
-    .problem-card:hover { transform: translateY(-3px); border-color: rgba(239,68,68,0.25) !important; }
-    .nav-link { position: relative; color: rgba(255,255,255,0.6); font-size: 13px; font-weight: 500; letter-spacing: 0.02em; transition: color 0.2s; }
-    .nav-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px; background: #5070b0; transition: width 0.3s; }
-    .nav-link:hover { color: #fff; }
-    .nav-link:hover::after { width: 100%; }
-    .shiny-cta-sm { --gradient-angle: 0deg; position: relative; overflow: hidden; border-radius: 9999px; padding: 0.5rem 1.25rem; background: linear-gradient(#000000, #000000) padding-box, conic-gradient(from var(--gradient-angle), transparent 0%, #5070b0 5%, #5070b0 15%, #5070b0 30%, transparent 40%, transparent 100%) border-box; border: 1.5px solid transparent; cursor: pointer; isolation: isolate; animation: border-spin 2.5s linear infinite; }
-    .score-ring { stroke-dasharray: 251; stroke-dashoffset: 205; stroke-linecap: round; transition: stroke-dashoffset 2s ease; }
-    .score-ring.animated { stroke-dashoffset: 205; }
-    .badge-ping { animation: pulse-glow 2s ease-in-out infinite; }
-    @keyframes ping-custom { 0% { transform: scale(1); opacity: 0.8; } 100% { transform: scale(2.2); opacity: 0; } }
-    .animate-ping-custom { animation: ping-custom 1.5s cubic-bezier(0,0,0.2,1) infinite; }
-    .hero-title-gradient { background: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.42) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-    .valid-badge { background: linear-gradient(135deg, rgba(80,112,176,0.12), rgba(80,112,176,0.04)); border: 1px solid rgba(80,112,176,0.25); }
+    /* Extra refinements */
+    .star-layer { position: fixed; border-radius: 50%; pointer-events: none; }
+    .hero-gradient { background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(80,112,176,0.12) 0%, transparent 70%); }
+    .underline-svg { position: relative; display: inline-block; }
+    .problem-card { transition: all 0.35s cubic-bezier(0.4,0,0.2,1); }
+    .problem-card:hover { transform: translateY(-3px); background: rgba(80,112,176,0.07); }
+    .score-ring { background: conic-gradient(#5070b0 18%, rgba(255,255,255,0.05) 18%); }
+    .navbar-link { position: relative; font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.6); letter-spacing: 0.05em; transition: color 0.2s; }
+    .navbar-link::after { content:''; position:absolute; bottom:-2px; left:0; width:0; height:1px; background:#5070b0; transition: width 0.3s; }
+    .navbar-link:hover { color:rgba(255,255,255,0.95); }
+    .navbar-link:hover::after { width:100%; }
+    .shiny-cta-sm { --gradient-angle: 0deg; position: relative; overflow: hidden; border-radius: 9999px; padding: 0.5rem 1.25rem; background: linear-gradient(#000000, #000000) padding-box, conic-gradient(from var(--gradient-angle), transparent 0%, #5070b0 5%, #5070b0 15%, #5070b0 30%, transparent 40%, transparent 100%) border-box; border: 2px solid transparent; cursor: pointer; isolation: isolate; animation: border-spin 2.5s linear infinite; font-size:0.78rem; font-weight:600; color:#fff; letter-spacing:0.04em; white-space:nowrap; }
+    .ping-dot { animation: ping-custom 1.4s cubic-bezier(0,0,0.2,1) infinite; }
+    @keyframes ping-custom { 75%, 100% { transform: scale(2); opacity: 0; } }
+    .score-number-anim { animation: count-up 1s 0.5s cubic-bezier(0.4,0,0.2,1) forwards; opacity:0; }
   </style>
 </head>
 
-<body class="bg-[#0a1128] selection-blue overflow-x-hidden font-inter">
+<body class="bg-[#0a1128] selection-blue overflow-x-hidden font-inter text-white">
 
-  <!-- ═══════════════════════════════════════════
-       BACKGROUND LAYER — STARS + GLOW + GRID
-  ═══════════════════════════════════════════ -->
-  <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
-
-    <!-- Stars layer 1 — small white dots -->
-    <div class="star-layer stars-1"
-         style="animation: animStar 120s linear infinite; width:1px; height:1px; background:transparent;"></div>
-    <div class="star-layer stars-1"
-         style="animation: animStar 120s linear infinite; animation-delay:-60s; top:2000px; width:1px; height:1px; background:transparent;"></div>
-
-    <!-- Stars layer 2 — medium dots -->
-    <div class="star-layer stars-2"
-         style="animation: animStar 200s linear infinite; width:2px; height:2px; background:transparent;"></div>
-    <div class="star-layer stars-2"
-         style="animation: animStar 200s linear infinite; animation-delay:-100s; top:2000px; width:2px; height:2px; background:transparent;"></div>
-
-    <!-- Stars layer 3 — blue tinted -->
-    <div class="star-layer stars-3"
-         style="animation: animStar 300s linear infinite; width:3px; height:3px; background:transparent;"></div>
-
-    <!-- Blue radial glow — center -->
-    <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] rounded-full"
-         style="background: radial-gradient(ellipse at center, rgba(80,112,176,0.12) 0%, rgba(80,112,176,0.04) 40%, transparent 70%);"></div>
-
-    <!-- Blue radial glow — top right accent -->
-    <div class="absolute -top-20 right-0 w-[500px] h-[500px] rounded-full"
-         style="background: radial-gradient(ellipse at center, rgba(80,112,176,0.08) 0%, transparent 65%);"></div>
-
-    <!-- Blue radial glow — bottom left accent -->
-    <div class="absolute bottom-0 -left-20 w-[400px] h-[400px] rounded-full"
-         style="background: radial-gradient(ellipse at center, rgba(80,112,176,0.06) 0%, transparent 65%);"></div>
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- BACKGROUND — Stars + Glow + Grid           -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
 
     <!-- Grid overlay -->
     <div class="absolute inset-0"
-         style="background-image: linear-gradient(rgba(80,112,176,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(80,112,176,0.04) 1px, transparent 1px); background-size: 60px 60px;"></div>
+      style="background-image: linear-gradient(rgba(80,112,176,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(80,112,176,0.04) 1px, transparent 1px); background-size: 60px 60px;">
+    </div>
 
-    <!-- Vignette -->
-    <div class="absolute inset-0"
-         style="background: radial-gradient(ellipse at center, transparent 40%, rgba(5,8,20,0.7) 100%);"></div>
+    <!-- Stars layer 1 — tiny, fast -->
+    <div class="star-layer stars-1"
+      style="width:1px; height:1px; top:0; left:0; animation: animStar 60s linear infinite; opacity:0.7;"></div>
+    <div class="star-layer stars-1"
+      style="width:1px; height:1px; top:2000px; left:0; animation: animStar 60s linear infinite; opacity:0.7;"></div>
+
+    <!-- Stars layer 2 — medium -->
+    <div class="star-layer stars-2"
+      style="width:2px; height:2px; top:0; left:0; animation: animStar 100s linear infinite; opacity:0.5;"></div>
+    <div class="star-layer stars-2"
+      style="width:2px; height:2px; top:2000px; left:0; animation: animStar 100s linear infinite; opacity:0.5;"></div>
+
+    <!-- Stars layer 3 — blue tinted -->
+    <div class="star-layer stars-3"
+      style="width:3px; height:3px; top:0; left:0; animation: animStar 150s linear infinite; opacity:0.6;"></div>
+    <div class="star-layer stars-3"
+      style="width:3px; height:3px; top:2000px; left:0; animation: animStar 150s linear infinite; opacity:0.6;"></div>
+
+    <!-- Ambient glow — center top -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] rounded-full opacity-20"
+      style="background: radial-gradient(ellipse at center, #5070b0 0%, transparent 70%); filter: blur(60px);"></div>
+
+    <!-- Ambient glow — bottom left -->
+    <div class="absolute bottom-0 left-0 w-[500px] h-[400px] rounded-full opacity-10"
+      style="background: radial-gradient(ellipse at center, #5070b0 0%, transparent 70%); filter: blur(80px);"></div>
+
+    <!-- Ambient glow — top right -->
+    <div class="absolute top-1/3 right-0 w-[400px] h-[400px] rounded-full opacity-8"
+      style="background: radial-gradient(ellipse at center, rgba(80,112,176,0.4) 0%, transparent 70%); filter: blur(70px);"></div>
+
   </div>
 
-  <!-- ═══════════════════════════════════════════
-       GRADIENT BLUR — NAVBAR FADE
-  ═══════════════════════════════════════════ -->
-  <div class="gradient-blur" aria-hidden="true"></div>
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- GRADIENT BLUR — top fade                   -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="gradient-blur"></div>
 
-  <!-- ═══════════════════════════════════════════
-       NAVBAR
-  ═══════════════════════════════════════════ -->
-  <header class="fixed top-0 left-0 right-0 z-50 flex justify-center pt-5 px-4">
-    <nav class="flex items-center justify-between gap-8 px-6 py-3 rounded-full
-                bg-black/60 backdrop-blur-xl border border-white/10
-                shadow-[0_0_40px_rgba(0,0,0,0.4)] w-full max-w-4xl">
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- NAVBAR                                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <nav class="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-4xl"
+    style="animation: fade-in-up 0.6s ease-out forwards;">
+    <div class="flex items-center justify-between gap-4 px-5 py-3 rounded-full border border-white/[0.07]"
+      style="background: rgba(0,0,0,0.6); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);">
 
-      <!-- Logo -->
-      <a href="#" class="flex items-center gap-2 shrink-0">
-        <span class="w-7 h-7 rounded-full flex items-center justify-center"
-              style="background: linear-gradient(135deg, #5070b0, #3a5490);">
-          <iconify-icon icon="lucide:scale" class="text-white" width="14"></iconify-icon>
-        </span>
-        <span class="font-manrope font-700 text-white text-sm tracking-wide leading-none">
-          Avestra<span class="text-[#5070b0]">.</span>
-        </span>
-      </a>
+      <!-- Logo / Brand -->
+      <div class="flex items-center gap-2 shrink-0">
+        <div class="w-7 h-7 rounded-full flex items-center justify-center"
+          style="background: linear-gradient(135deg, #5070b0, rgba(80,112,176,0.3));">
+          <iconify-icon icon="lucide:scale" style="color:#fff; font-size:13px;"></iconify-icon>
+        </div>
+        <span class="font-manrope font-700 text-white text-sm tracking-tight hidden sm:block">Avestra</span>
+      </div>
 
-      <!-- Links -->
-      <div class="hidden md:flex items-center gap-6">
-        <a href="#diagnostico" class="nav-link font-inter">Diagnóstico</a>
-        <a href="#solucao" class="nav-link font-inter">Solução</a>
-        <a href="#resultados" class="nav-link font-inter">Resultados</a>
-        <a href="#cronograma" class="nav-link font-inter">Cronograma</a>
-        <a href="#investimento" class="nav-link font-inter">Investimento</a>
+      <!-- Nav links -->
+      <div class="flex items-center gap-5">
+        <a href="#diagnostico" class="navbar-link">Diagnóstico</a>
+        <a href="#solucao" class="navbar-link hidden sm:block">Solução</a>
+        <a href="#cronograma" class="navbar-link hidden md:block">Cronograma</a>
+        <a href="#investimento" class="navbar-link hidden md:block">Investimento</a>
       </div>
 
       <!-- CTA -->
       <a href="https://calendly.com/marketingavestra/30min" target="_blank" rel="noopener"
-         class="shiny-cta-sm flex items-center gap-1.5 text-white font-inter font-600 text-xs shrink-0"
-         style="font-weight:600;">
-        <iconify-icon icon="lucide:calendar" width="13"></iconify-icon>
-        <span class="hidden sm:inline">Agendar</span>
+        class="shiny-cta-sm flex items-center gap-1.5">
+        <iconify-icon icon="lucide:calendar" style="font-size:13px; flex-shrink:0;"></iconify-icon>
+        <span>Agendar</span>
       </a>
-    </nav>
-  </header>
 
-  <!-- ═══════════════════════════════════════════
-       HERO SECTION
-  ═══════════════════════════════════════════ -->
-  <section class="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pt-28 pb-20">
+    </div>
+  </nav>
 
-    <!-- Decorative orbs -->
-    <div class="hero-gradient-orb absolute top-20 left-1/4 w-72 h-72 opacity-30"
-         style="background: radial-gradient(circle, rgba(80,112,176,0.35), transparent 70%); animation: float 7s ease-in-out infinite;"></div>
-    <div class="hero-gradient-orb absolute bottom-32 right-1/4 w-56 h-56 opacity-20"
-         style="background: radial-gradient(circle, rgba(80,112,176,0.3), transparent 70%); animation: float 9s ease-in-out infinite; animation-delay: -3s;"></div>
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HERO                                       -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="relative z-10 min-h-screen flex flex-col items-center justify-center px-5 pt-28 pb-20"
+    style="background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(80,112,176,0.11) 0%, transparent 70%);">
 
-    <!-- Content container -->
-    <div class="relative flex flex-col items-center text-center max-w-4xl mx-auto gap-6">
+    <!-- Badge ping -->
+    <div class="animate-fade-up mb-8 flex items-center gap-2.5 px-4 py-2 rounded-full border border-[#5070b0]/25"
+      style="animation-delay: 0.1s; background: rgba(80,112,176,0.07); backdrop-filter: blur(10px);">
+      <span class="relative flex h-2 w-2">
+        <span class="ping-dot absolute inline-flex h-full w-full rounded-full bg-[#5070b0] opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-[#5070b0]"></span>
+      </span>
+      <span class="text-[#5070b0] font-inter font-600 text-xs tracking-widest uppercase">Proposta Exclusiva — Junho 2025</span>
+    </div>
 
-      <!-- Badge -->
-      <div class="animate-fade-up flex items-center gap-2.5 px-4 py-2 rounded-full border border-[#5070b0]/30
-                  bg-[#5070b0]/10 backdrop-blur-sm badge-ping"
-           style="animation-delay: 0s;">
-        <span class="relative flex h-2.5 w-2.5">
-          <span class="animate-ping-custom absolute inline-flex h-full w-full rounded-full bg-[#5070b0] opacity-60"></span>
-          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#5070b0]"></span>
+    <!-- Main headline -->
+    <div class="animate-fade-up max-w-4xl text-center mb-6" style="animation-delay:0.2s;">
+      <h1 class="font-manrope font-900 leading-[1.05] tracking-tighter mb-0"
+        style="font-size: clamp(2.2rem, 6vw, 4.2rem);">
+        <span class="text-transparent bg-clip-text"
+          style="background-image: linear-gradient(180deg, #ffffff 0%, rgba(255,255,255,0.42) 100%);">
+          De invisível a referência:<br class="hidden sm:block" />
         </span>
-        <span class="font-inter text-xs font-600 text-[#5070b0] uppercase tracking-widest"
-              style="font-weight:600; letter-spacing:0.12em;">
-          Proposta Exclusiva · Válida por 7 dias
+        <span class="text-transparent bg-clip-text"
+          style="background-image: linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.35) 100%);">
+          como transformar seu perfil em<br class="hidden sm:block" />
         </span>
-      </div>
-
-      <!-- Valid badge -->
-      <div class="animate-fade-up valid-badge px-5 py-2 rounded-full text-xs text-zinc-400 font-inter"
-           style="animation-delay:0.1s;">
-        <span class="text-zinc-500">Para:</span>
-        <span class="text-white font-500 ml-1">Gustavo Martinek</span>
-        <span class="mx-2 text-zinc-600">·</span>
-        <span class="text-zinc-500">martinekadv.com.br</span>
-      </div>
-
-      <!-- Pre-headline -->
-      <p class="animate-fade-up font-inter text-[#5070b0] text-sm font-600 uppercase tracking-[0.2em]"
-         style="animation-delay:0.15s; font-weight:600;">
-        De Especialista Invisível a Referência Digital
-      </p>
-
-      <!-- Main Title -->
-      <h1 class="animate-fade-up font-manrope hero-title-gradient text-4xl sm:text-5xl lg:text-6xl xl:text-7xl
-                 font-900 leading-[1.05] tracking-tighter"
-          style="animation-delay:0.2s; font-weight:900;">
-        Como Estruturar Sua<br class="hidden sm:block"/>
-        Presença Online e<br class="hidden sm:block"/>
-        Transformar Buscas em
-        <br class="hidden sm:block"/>
-        <!-- Name in blue with SVG underline -->
-        <span class="relative inline-block">
-          <span class="text-[#5070b0]" style="text-shadow: 0 0 40px rgba(80,112,176,0.4);">
-            Clientes Pagantes
+        <!-- Highlighted name -->
+        <span class="relative inline-block mt-1">
+          <span class="font-manrope font-900 text-[#5070b0]"
+            style="text-shadow: 0 0 40px rgba(80,112,176,0.45), 0 0 80px rgba(80,112,176,0.15);">
+            Dr. Gustavo Martinek
           </span>
-          <!-- SVG underline -->
-          <svg class="absolute -bottom-3 left-0 w-full" viewBox="0 0 400 14" fill="none"
-               xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M2 9 C80 3, 160 12, 240 6 C320 0, 370 10, 398 7"
-                  stroke="#5070b0" stroke-width="3" stroke-linecap="round"
-                  fill="none" opacity="0.7"/>
-            <path d="M2 11 C80 5, 160 14, 240 8 C320 2, 370 12, 398 9"
-                  stroke="#5070b0" stroke-width="1" stroke-linecap="round"
-                  fill="none" opacity="0.3"/>
+          <!-- Underline SVG -->
+          <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 400 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:10px;">
+            <path d="M2 8 Q100 2 200 7 Q300 12 398 5" stroke="#5070b0" stroke-width="2.5"
+              stroke-linecap="round" fill="none" opacity="0.7"
+              style="stroke-dasharray: 420; stroke-dashoffset: 420; animation: drawLine 1.2s 0.8s ease-out forwards;">
+            </path>
           </svg>
+          <style>
+            @keyframes drawLine { to { stroke-dashoffset: 0; } }
+          </style>
         </span>
       </h1>
+    </div>
 
-      <!-- Name highlight -->
-      <div class="animate-fade-up flex items-center gap-3 mt-2" style="animation-delay:0.3s;">
-        <div class="h-px w-12 bg-gradient-to-r from-transparent to-[#5070b0]/50"></div>
-        <p class="font-inter text-zinc-400 text-sm">
-          Preparada exclusivamente para
-          <span class="font-600 text-white" style="font-weight:600;">
-            Gustavo Martinek
-          </span>
-        </p>
-        <div class="h-px w-12 bg-gradient-to-l from-transparent to-[#5070b0]/50"></div>
-      </div>
-
-      <!-- Subtitle -->
-      <p class="animate-fade-up font-inter text-zinc-400 text-base sm:text-lg leading-relaxed max-w-2xl"
-         style="animation-delay:0.35s;">
-        Você tem um portfólio jurídico robusto cobrindo Direito Imobiliário, Societário,
-        Licitações, Marcas e Patentes. <span class="text-white font-500" style="font-weight:500;">
-        O problema é que ninguém está conseguindo encontrar isso online.</span>
+    <!-- Subtitle -->
+    <div class="animate-fade-up max-w-2xl text-center mb-10" style="animation-delay:0.35s;">
+      <p class="font-inter text-zinc-400 leading-relaxed" style="font-size: clamp(0.95rem, 2vw, 1.1rem);">
+        Uma <span class="text-zinc-200 font-500">máquina de captação de clientes imobiliários</span> em São Paulo —<br class="hidden sm:block" />
+        construída do zero, rastreada e pronta para escalar nos <span class="text-zinc-200 font-500">próximos 30 dias</span>.
       </p>
+    </div>
 
-      <!-- From / To pill -->
-      <div class="animate-fade-up flex flex-wrap justify-center items-center gap-3 mt-1"
-           style="animation-delay:0.4s;">
-        <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10">
-          <iconify-icon icon="lucide:user" class="text-zinc-500" width="13"></iconify-icon>
-          <span class="font-inter text-xs text-zinc-500">Para: <span class="text-zinc-300">Gustavo Martinek</span></span>
+    <!-- From / To tag -->
+    <div class="animate-fade-up mb-10" style="animation-delay:0.45s;">
+      <div class="flex items-center gap-3 px-5 py-3 rounded-2xl border border-white/[0.06]"
+        style="background: rgba(255,255,255,0.02); backdrop-filter: blur(8px);">
+        <div class="flex flex-col items-end">
+          <span class="text-zinc-500 text-[10px] uppercase tracking-widest font-600 mb-0.5">Para</span>
+          <span class="text-white font-manrope font-700 text-sm">Gustavo Martinek</span>
+          <span class="text-zinc-500 text-[10px]">Advogado Imobiliário — São Paulo, SP</span>
         </div>
-        <iconify-icon icon="lucide:arrow-right" class="text-[#5070b0]" width="16"></iconify-icon>
-        <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-[#5070b0]/10 border border-[#5070b0]/25">
-          <iconify-icon icon="lucide:building-2" class="text-[#5070b0]" width="13"></iconify-icon>
-          <span class="font-inter text-xs text-zinc-400">De: <span class="text-[#5070b0] font-600" style="font-weight:600;">Agência Avestra</span></span>
+        <div class="w-px h-10 bg-white/10 mx-1"></div>
+        <div class="flex flex-col items-start">
+          <span class="text-zinc-500 text-[10px] uppercase tracking-widest font-600 mb-0.5">De</span>
+          <span class="text-white font-manrope font-700 text-sm">Agência Avestra</span>
+          <span class="text-zinc-500 text-[10px]">Marketing Digital Premium</span>
         </div>
-      </div>
-
-      <!-- CTA Button -->
-      <div class="animate-fade-up mt-4" style="animation-delay:0.5s;">
-        <a href="#diagnostico"
-           class="shiny-cta inline-flex items-center gap-3 text-white font-manrope font-700 text-base"
-           style="font-weight:700;">
-          <span class="relative z-10">Ver Proposta Completa</span>
-          <iconify-icon icon="lucide:arrow-right" class="relative z-10" width="18"></iconify-icon>
-        </a>
-      </div>
-
-      <!-- Scroll hint -->
-      <div class="animate-fade-up mt-8 flex flex-col items-center gap-2 opacity-40"
-           style="animation-delay:0.7s;">
-        <span class="font-inter text-xs text-zinc-600 uppercase tracking-widest">Role para ver</span>
-        <div class="w-px h-8 bg-gradient-to-b from-zinc-600 to-transparent"></div>
       </div>
     </div>
+
+    <!-- CTA Button -->
+    <div class="animate-fade-up" style="animation-delay:0.55s;">
+      <a href="#diagnostico">
+        <button class="shiny-cta flex items-center gap-3 font-manrope font-700 text-white text-sm tracking-wide">
+          <span style="position:relative; z-index:1;">Ver Proposta Completa</span>
+          <iconify-icon icon="lucide:arrow-right" style="font-size:16px; position:relative; z-index:1;"></iconify-icon>
+        </button>
+      </a>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="animate-fade-up absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30"
+      style="animation-delay:1.2s;">
+      <span class="text-zinc-500 text-[10px] uppercase tracking-widest">Role para explorar</span>
+      <iconify-icon icon="lucide:chevrons-down" style="font-size:16px; color:#5070b0; animation: float 2s ease-in-out infinite;"></iconify-icon>
+    </div>
+
   </section>
 
-  <!-- ═══════════════════════════════════════════
-       SEÇÃO DIAGNÓSTICO
-  ═══════════════════════════════════════════
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SECTION DIVIDER                            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <div class="section-divider w-full relative z-10 mx-auto max-w-5xl"></div>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SEÇÃO 01 — DIAGNÓSTICO                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section id="diagnostico" class="relative z-10 py-24 px-5">
+    <div class="max-w-5xl mx-auto">
+
+      <!-- Section label -->
+      <div class="reveal flex items-center gap-3 mb-6">
+        <span class="text-[#5070b0] font-inter font-700 text-[10px] tracking-[0.25em] uppercase">01 — Diagnóstico</span>
+        <div class="h-px flex-1 max-w-[80px]" style="background: linear-gradient(90deg, #5070b0, transparent);"></div>
+      </div>
+
+      <!-- Section headline -->
+      <div class="reveal mb-4">
+        <h2 class="font-manrope font-900 tracking-tighter text-white leading-tight"
+          style="font-size: clamp(1.9rem, 4.5vw, 3rem);">
+          O que os dados revelam sobre<br class="hidden sm:block" />
+          <span class="text-transparent bg-clip-text"
+            style="background-image: linear-gradient(90deg, #5070b0, #7090c8);">
+            o que você está perdendo
+          </span>
+        </h2>
+      </div>
+
+      <!-- Intro paragraph -->
+      <div class="reveal mb-14 max-w-2xl">
+        <p class="font-inter text-zinc-400 leading-relaxed text-base">
+          Dr. Gustavo, fizemos um <span class="text-zinc-200 font-500">diagnóstico completo da sua presença digital</span>.
+          Antes de apresentar qualquer solução, precisamos ser diretos sobre o que encontramos — porque cada dia sem agir
+          tem um custo real e cumulativo.
+        </p>
+      </div>
+
+      <!-- ─── METRIC CARDS ─── -->
+      <div class="reveal grid grid-cols-1
 <!-- ============================================================
-     PARTE 2 — SEÇÕES: DIFERENTE · SOLUÇÃO · JORNADA · CRONOGRAMA
+     PARTE 2 — AVESTRA BLUE
+     Seções: diferente · solução · jornada · cronograma
      ============================================================ -->
 
-<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+<!-- ═══════════════════════════════════════════════════════════
      02 — POR QUE É DIFERENTE
-     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
-<section id="diferente" class="py-24 px-6 relative overflow-hidden">
+     ═══════════════════════════════════════════════════════════ -->
+<section id="diferente" class="py-28 px-6 relative overflow-hidden">
 
-  <!-- Background texture -->
-  <div class="absolute inset-0 bg-[#020817]">
-    <div class="absolute inset-0 opacity-30"
-         style="background-image: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(30,80,180,0.18) 0%, transparent 70%);">
-    </div>
-    <div class="absolute inset-0"
-         style="background-image: linear-gradient(rgba(255,255,255,0.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.015) 1px, transparent 1px); background-size: 64px 64px;">
-    </div>
-  </div>
+  <!-- Background subtle -->
+  <div class="absolute inset-0 bg-gradient-to-b from-[#080f1c] via-[#060d18] to-[#080f1c] pointer-events-none"></div>
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-px bg-gradient-to-r from-transparent via-[#1d72f5]/30 to-transparent"></div>
 
-  <div class="relative max-w-6xl mx-auto">
+  <div class="relative z-10 max-w-5xl mx-auto">
 
-    <!-- Section label -->
+    <!-- Label -->
     <div class="flex items-center gap-3 mb-6">
-      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-widest uppercase"
-            style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25); color: #60a5fa;">
-        <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse inline-block"></span>
-        02 — Por Que É Diferente
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#1d72f5]/40 bg-[#1d72f5]/10 text-[#4d9fff] text-xs font-semibold tracking-widest uppercase">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#1d72f5] animate-pulse inline-block"></span>
+        02 — Por que é diferente
       </span>
     </div>
 
     <!-- Heading -->
-    <div class="mb-14">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4"
-          style="font-family: 'Inter', sans-serif; letter-spacing: -0.02em;">
-        A diferença entre visibilidade real<br class="hidden md:block"/>
-        <span style="background: linear-gradient(90deg, #3b82f6, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-          e apenas marcar presença
-        </span>
-      </h2>
-      <p class="text-slate-400 text-lg max-w-2xl">
-        A maioria das abordagens para advogados trata presença digital como estética. Aqui tratamos como infraestrutura de aquisição de clientes.
-      </p>
-    </div>
+    <h2 class="text-3xl md:text-4xl font-black text-white mb-3 leading-tight">
+      Serviços avulsos <span class="text-[#4d9fff]">vs.</span> infraestrutura conectada
+    </h2>
+    <p class="text-[#7a9bbf] text-lg mb-14 max-w-2xl">
+      A diferença entre contratar peças soltas e construir um sistema que trabalha por você 24h.
+    </p>
 
     <!-- Compare Table -->
-    <div class="rounded-2xl overflow-hidden border border-slate-800"
-         style="background: rgba(15,23,42,0.85); backdrop-filter: blur(12px);">
+    <div class="rounded-2xl overflow-hidden border border-[#1d72f5]/20 shadow-[0_0_60px_rgba(29,114,245,0.08)]">
 
       <!-- Table Header -->
-      <div class="grid grid-cols-3 text-sm font-semibold">
-        <div class="px-6 py-4 text-slate-400 uppercase tracking-wider text-xs border-b border-slate-800">
+      <div class="grid grid-cols-[1fr_1fr_1fr] bg-gradient-to-r from-[#1d72f5] via-[#1a68e0] to-[#0d4fb5]">
+        <div class="py-4 px-6 text-xs font-bold uppercase tracking-widest text-white/60">
           Critério
         </div>
-        <div class="px-6 py-4 text-center uppercase tracking-wider text-xs border-b border-slate-800"
-             style="background: rgba(239,68,68,0.06); color: #f87171; border-left: 1px solid rgba(239,68,68,0.15); border-right: 1px solid rgba(239,68,68,0.15);">
-          <span class="inline-flex items-center gap-2">
-            <iconify-icon icon="ph:x-circle-fill" style="color:#ef4444;" width="16"></iconify-icon>
-            Abordagem Comum
+        <div class="py-4 px-6 border-l border-white/10 text-center">
+          <span class="inline-flex items-center gap-2 text-sm font-bold text-white/70">
+            <svg class="w-4 h-4 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            Abordagem comum
           </span>
         </div>
-        <div class="px-6 py-4 text-center uppercase tracking-wider text-xs border-b border-slate-800"
-             style="background: linear-gradient(135deg, rgba(37,99,235,0.18) 0%, rgba(59,130,246,0.10) 100%); color: #60a5fa; border-right: 1px solid rgba(59,130,246,0.15);">
-          <span class="inline-flex items-center gap-2">
-            <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6;" width="16"></iconify-icon>
-            Metodologia Avestra
+        <div class="py-4 px-6 border-l border-white/10 text-center">
+          <span class="inline-flex items-center gap-2 text-sm font-bold text-white">
+            <svg class="w-4 h-4 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+            Proposta Avestra
           </span>
         </div>
       </div>
 
       <!-- Rows -->
-      <div class="divide-y divide-slate-800/60">
+      <div class="divide-y divide-[#1d72f5]/10">
 
         <!-- Row 1 -->
-        <div class="grid grid-cols-3 items-center hover:bg-white/[0.02] transition-colors">
-          <div class="px-6 py-5 text-slate-300 font-medium text-sm">Estratégia inicial</div>
-          <div class="px-6 py-5 text-center border-x border-slate-800/50" style="background: rgba(239,68,68,0.03);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-red-400"
-                  style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-              "Vamos criar conteúdo"
-            </span>
+        <div class="grid grid-cols-[1fr_1fr_1fr] bg-[#06111f] hover:bg-[#071422] transition-colors duration-200">
+          <div class="py-5 px-6 flex items-center gap-3">
+            <span class="iconify text-[#4d9fff] text-xl flex-shrink-0" data-icon="ph:target-bold"></span>
+            <span class="text-sm font-semibold text-white/80">Estratégia</span>
           </div>
-          <div class="px-6 py-5 text-center" style="background: rgba(37,99,235,0.04);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-blue-300"
-                  style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);">
-              Diagnóstico → fundação → ativação
-            </span>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-red-500/20 border border-red-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+              </span>
+              <span class="text-sm text-[#5a7898]">Serviços avulsos sem conexão entre si</span>
+            </div>
+          </div>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              </span>
+              <span class="text-sm text-white/80">Infraestrutura integrada com objetivo único: gerar clientes</span>
+            </div>
           </div>
         </div>
 
         <!-- Row 2 -->
-        <div class="grid grid-cols-3 items-center hover:bg-white/[0.02] transition-colors">
-          <div class="px-6 py-5 text-slate-300 font-medium text-sm">Foco do trabalho</div>
-          <div class="px-6 py-5 text-center border-x border-slate-800/50" style="background: rgba(239,68,68,0.03);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-red-400"
-                  style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-              Estética e seguidores
-            </span>
+        <div class="grid grid-cols-[1fr_1fr_1fr] bg-[#050e1b] hover:bg-[#071422] transition-colors duration-200">
+          <div class="py-5 px-6 flex items-center gap-3">
+            <span class="iconify text-[#4d9fff] text-xl flex-shrink-0" data-icon="ph:magnifying-glass-bold"></span>
+            <span class="text-sm font-semibold text-white/80">Diagnóstico</span>
           </div>
-          <div class="px-6 py-5 text-center" style="background: rgba(37,99,235,0.04);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-blue-300"
-                  style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);">
-              Consultas e clientes pagantes
-            </span>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-red-500/20 border border-red-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+              </span>
+              <span class="text-sm text-[#5a7898]">Nenhum — vende o pacote padrão para todos</span>
+            </div>
+          </div>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              </span>
+              <span class="text-sm text-white/80">Score 18/100 mapeado — cada entregável resolve um problema real seu</span>
+            </div>
           </div>
         </div>
 
         <!-- Row 3 -->
-        <div class="grid grid-cols-3 items-center hover:bg-white/[0.02] transition-colors">
-          <div class="px-6 py-5 text-slate-300 font-medium text-sm">Tomada de decisão</div>
-          <div class="px-6 py-5 text-center border-x border-slate-800/50" style="background: rgba(239,68,68,0.03);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-red-400"
-                  style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-              Por intuição e tendência
-            </span>
+        <div class="grid grid-cols-[1fr_1fr_1fr] bg-[#06111f] hover:bg-[#071422] transition-colors duration-200">
+          <div class="py-5 px-6 flex items-center gap-3">
+            <span class="iconify text-[#4d9fff] text-xl flex-shrink-0" data-icon="ph:chart-line-up-bold"></span>
+            <span class="text-sm font-semibold text-white/80">Rastreamento</span>
           </div>
-          <div class="px-6 py-5 text-center" style="background: rgba(37,99,235,0.04);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-blue-300"
-                  style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);">
-              Por dados reais e metas claras
-            </span>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-red-500/20 border border-red-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+              </span>
+              <span class="text-sm text-[#5a7898]">Sem Analytics, sem Pixel — você nunca sabe o que funciona</span>
+            </div>
+          </div>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              </span>
+              <span class="text-sm text-white/80">GA4 + Meta Pixel instalados desde o D+7 — dados desde o primeiro dia</span>
+            </div>
           </div>
         </div>
 
         <!-- Row 4 -->
-        <div class="grid grid-cols-3 items-center hover:bg-white/[0.02] transition-colors">
-          <div class="px-6 py-5 text-slate-300 font-medium text-sm">Rastreamento</div>
-          <div class="px-6 py-5 text-center border-x border-slate-800/50" style="background: rgba(239,68,68,0.03);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-red-400"
-                  style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-              "Parece que cresceu"
-            </span>
+        <div class="grid grid-cols-[1fr_1fr_1fr] bg-[#050e1b] hover:bg-[#071422] transition-colors duration-200">
+          <div class="py-5 px-6 flex items-center gap-3">
+            <span class="iconify text-[#4d9fff] text-xl flex-shrink-0" data-icon="ph:map-pin-bold"></span>
+            <span class="text-sm font-semibold text-white/80">Presença local</span>
           </div>
-          <div class="px-6 py-5 text-center" style="background: rgba(37,99,235,0.04);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-blue-300"
-                  style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);">
-              GA4 + Pixel + relatório mensal
-            </span>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-red-500/20 border border-red-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+              </span>
+              <span class="text-sm text-[#5a7898]">Ignorada — foco só em anúncios pagos</span>
+            </div>
+          </div>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              </span>
+              <span class="text-sm text-white/80">GMB otimizado — tráfego orgânico de alta intenção, sem custo por clique</span>
+            </div>
           </div>
         </div>
 
         <!-- Row 5 -->
-        <div class="grid grid-cols-3 items-center hover:bg-white/[0.02] transition-colors">
-          <div class="px-6 py-5 text-slate-300 font-medium text-sm">Canal de aquisição</div>
-          <div class="px-6 py-5 text-center border-x border-slate-800/50" style="background: rgba(239,68,68,0.03);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-red-400"
-                  style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-              Apenas Instagram
-            </span>
+        <div class="grid grid-cols-[1fr_1fr_1fr] bg-[#06111f] hover:bg-[#071422] transition-colors duration-200">
+          <div class="py-5 px-6 flex items-center gap-3">
+            <span class="iconify text-[#4d9fff] text-xl flex-shrink-0" data-icon="ph:users-three-bold"></span>
+            <span class="text-sm font-semibold text-white/80">Conversão</span>
           </div>
-          <div class="px-6 py-5 text-center" style="background: rgba(37,99,235,0.04);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-blue-300"
-                  style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);">
-              Google + Instagram + Site integrados
-            </span>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-red-500/20 border border-red-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+              </span>
+              <span class="text-sm text-[#5a7898]">Bio genérica que pede DM — alta fricção, baixo retorno</span>
+            </div>
+          </div>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              </span>
+              <span class="text-sm text-white/80">Landing page dedicada + WhatsApp pré-preenchido — jornada sem atrito</span>
+            </div>
           </div>
         </div>
 
         <!-- Row 6 -->
-        <div class="grid grid-cols-3 items-center hover:bg-white/[0.02] transition-colors">
-          <div class="px-6 py-5 text-slate-300 font-medium text-sm">Investimento em anúncios</div>
-          <div class="px-6 py-5 text-center border-x border-slate-800/50" style="background: rgba(239,68,68,0.03);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-red-400"
-                  style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-              Sem base → ROI imprevisível
-            </span>
+        <div class="grid grid-cols-[1fr_1fr_1fr] bg-[#050e1b] hover:bg-[#071422] transition-colors duration-200">
+          <div class="py-5 px-6 flex items-center gap-3">
+            <span class="iconify text-[#4d9fff] text-xl flex-shrink-0" data-icon="ph:calendar-check-bold"></span>
+            <span class="text-sm font-semibold text-white/80">Relatórios</span>
           </div>
-          <div class="px-6 py-5 text-center" style="background: rgba(37,99,235,0.04);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-blue-300"
-                  style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);">
-              Fundação antes da verba → ROI mensurável
-            </span>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-red-500/20 border border-red-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-red-400"></span>
+              </span>
+              <span class="text-sm text-[#5a7898]">Você pergunta, eles respondem quando querem</span>
+            </div>
           </div>
-        </div>
-
-        <!-- Row 7 -->
-        <div class="grid grid-cols-3 items-center hover:bg-white/[0.02] transition-colors rounded-b-2xl">
-          <div class="px-6 py-5 text-slate-300 font-medium text-sm">Resultado esperado</div>
-          <div class="px-6 py-5 text-center border-x border-slate-800/50" style="background: rgba(239,68,68,0.03);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-red-400"
-                  style="background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.2);">
-              Presença digital sem conversão
-            </span>
-          </div>
-          <div class="px-6 py-5 text-center" style="background: rgba(37,99,235,0.04);">
-            <span class="inline-block px-3 py-1.5 rounded-lg text-xs text-blue-300"
-                  style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25);">
-              Consultas novas em 30 dias
-            </span>
+          <div class="py-5 px-6 border-l border-[#1d72f5]/10 flex items-center">
+            <div class="flex items-start gap-2">
+              <span class="w-4 h-4 rounded-full bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              </span>
+              <span class="text-sm text-white/80">Relatório executivo mensal em português claro — sem jargão</span>
+            </div>
           </div>
         </div>
 
       </div>
     </div>
-    <!-- /Compare Table -->
+    <!-- /compare table -->
 
   </div>
 </section>
 
 
-<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+<!-- ═══════════════════════════════════════════════════════════
      03 — A SOLUÇÃO
-     ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
-<section id="solucao" class="py-24 px-6 relative overflow-hidden">
+     ═══════════════════════════════════════════════════════════ -->
+<section id="solucao" class="py-28 px-6 relative overflow-hidden">
 
   <!-- Background -->
-  <div class="absolute inset-0" style="background: #030d1c;">
-    <div class="absolute inset-0"
-         style="background: radial-gradient(ellipse 70% 50% at 15% 50%, rgba(37,99,235,0.12) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 85% 80%, rgba(59,130,246,0.07) 0%, transparent 60%);">
-    </div>
-    <!-- Dot pattern -->
-    <div class="absolute inset-0 opacity-20"
-         style="background-image: radial-gradient(circle, rgba(148,163,184,0.3) 1px, transparent 1px); background-size: 40px 40px;">
-    </div>
-  </div>
+  <div class="absolute inset-0 bg-gradient-to-b from-[#080f1c] to-[#060c18] pointer-events-none"></div>
+  <!-- Grid pattern -->
+  <div class="absolute inset-0 opacity-[0.04]" style="background-image:linear-gradient(#1d72f5 1px,transparent 1px),linear-gradient(90deg,#1d72f5 1px,transparent 1px);background-size:48px 48px;"></div>
+  <!-- Glow center -->
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[500px] bg-[#1d72f5]/5 rounded-full blur-[120px] pointer-events-none"></div>
 
-  <div class="relative max-w-6xl mx-auto">
+  <div class="relative z-10 max-w-6xl mx-auto">
 
-    <!-- Section label -->
+    <!-- Label -->
     <div class="flex items-center gap-3 mb-6">
-      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold tracking-widest uppercase"
-            style="background: rgba(59,130,246,0.12); border: 1px solid rgba(59,130,246,0.25); color: #60a5fa;">
-        <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse inline-block"></span>
+      <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#1d72f5]/40 bg-[#1d72f5]/10 text-[#4d9fff] text-xs font-semibold tracking-widest uppercase">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#1d72f5] animate-pulse inline-block"></span>
         03 — A Solução
       </span>
     </div>
 
     <!-- Heading -->
     <div class="mb-14">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4"
-          style="font-family: 'Inter', sans-serif; letter-spacing: -0.02em;">
-        Arquitetura de presença digital<br class="hidden md:block"/>
-        <span style="background: linear-gradient(90deg, #3b82f6, #93c5fd); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-          construída para o seu perfil
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-3 leading-tight">
+        6 pilares. Um único objetivo:<br>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#4d9fff] to-[#1d72f5]">
+          clientes qualificados chegando até você.
         </span>
       </h2>
-      <p class="text-slate-400 text-lg max-w-2xl">
-        Cinco pilares integrados que transformam sua invisibilidade digital em um sistema consistente de captação de clientes.
+      <p class="text-[#7a9bbf] text-lg max-w-2xl">
+        Cada entregável foi desenhado para resolver um ponto de falha específico encontrado no seu diagnóstico.
       </p>
     </div>
 
     <!-- Bento Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-      <!-- ─── CARD 1 — Google Meu Negócio (col-span-2) ─── -->
-      <div class="lg:col-span-2 group relative rounded-2xl overflow-hidden border border-slate-800/80 hover:border-blue-500/40 transition-all duration-500"
-           style="background: linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(20,30,55,0.90) 100%); backdrop-filter: blur(16px);">
+      <!-- ── CARD 1 — Google Meu Negócio (lg:col-span-2) ── -->
+      <div class="pilar-card lg:col-span-2 relative rounded-2xl border border-[#1d72f5]/20 bg-gradient-to-br from-[#071525] via-[#060f1e] to-[#050d18] p-7 overflow-hidden group hover:border-[#1d72f5]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(29,114,245,0.12)]">
 
-        <!-- Top accent bar -->
-        <div class="h-0.5 w-full" style="background: linear-gradient(90deg, #2563eb, #3b82f6, transparent);"></div>
+        <!-- Glow blob -->
+        <div class="absolute -top-10 -left-10 w-48 h-48 bg-[#1d72f5]/10 rounded-full blur-3xl group-hover:bg-[#1d72f5]/18 transition-all duration-500 pointer-events-none"></div>
 
-        <!-- Glow bg -->
-        <div class="absolute top-0 left-0 w-64 h-64 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-             style="background: radial-gradient(circle, rgba(37,99,235,0.12) 0%, transparent 70%); transform: translate(-30%, -30%);">
+        <!-- Number glow -->
+        <div class="absolute top-6 right-7 text-7xl font-black text-[#1d72f5]/10 group-hover:text-[#1d72f5]/18 transition-colors duration-300 leading-none select-none glow-number" style="text-shadow:0 0 40px rgba(29,114,245,0.2);">01</div>
+
+        <div class="relative z-10">
+          <!-- Icon -->
+          <div class="w-12 h-12 rounded-xl bg-[#1d72f5]/15 border border-[#1d72f5]/30 flex items-center justify-center mb-5">
+            <span class="iconify text-[#4d9fff] text-2xl" data-icon="ph:map-pin-line-bold"></span>
+          </div>
+
+          <!-- Title -->
+          <h3 class="text-xl font-black text-white mb-1">Google Meu Negócio</h3>
+          <p class="text-[#4d9fff] text-sm font-semibold mb-5">Você no mapa onde os clientes estão</p>
+
+          <!-- Bullets -->
+          <div class="grid sm:grid-cols-2 gap-3 mb-6">
+            <div class="flex items-start gap-2.5">
+              <span class="iconify text-[#4d9fff] text-base flex-shrink-0 mt-0.5" data-icon="ph:check-circle-bold"></span>
+              <span class="text-sm text-[#7a9bbf]">Criação e otimização completa do perfil</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="iconify text-[#4d9fff] text-base flex-shrink-0 mt-0.5" data-icon="ph:check-circle-bold"></span>
+              <span class="text-sm text-[#7a9bbf]">Palavras-chave de alto volume em SP</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="iconify text-[#4d9fff] text-base flex-shrink-0 mt-0.5" data-icon="ph:check-circle-bold"></span>
+              <span class="text-sm text-[#7a9bbf]">Fotos, horários e botão de agendamento</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="iconify text-[#4d9fff] text-base flex-shrink-0 mt-0.5" data-icon="ph:check-circle-bold"></span>
+              <span class="text-sm text-[#7a9bbf]">Estratégia de captação de avaliações</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="iconify text-[#4d9fff] text-base flex-shrink-0 mt-0.5" data-icon="ph:check-circle-bold"></span>
+              <span class="text-sm text-[#7a9bbf]">Categoria correta + descrição otimizada</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="iconify text-[#4d9fff] text-base flex-shrink-0 mt-0.5" data-icon="ph:check-circle-bold"></span>
+              <span class="text-sm text-[#7a9bbf]">Posts mensais de manutenção do perfil</span>
+            </div>
+          </div>
+
+          <!-- Badge resultado -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30">
+            <span class="iconify text-emerald-400 text-base" data-icon="ph:trend-up-bold"></span>
+            <span class="text-xs font-bold text-emerald-400">Resultado: 200–500 aparições/mês nos primeiros 30 dias</span>
+          </div>
         </div>
+      </div>
+      <!-- /card 1 -->
 
-        <div class="p-8 flex flex-col h-full">
+      <!-- ── CARD 2 — Bio + Link Estratégico ── -->
+      <div class="pilar-card relative rounded-2xl border border-[#1d72f5]/20 bg-gradient-to-br from-[#071525] via-[#060f1e] to-[#050d18] p-7 overflow-hidden group hover:border-[#1d72f5]/50 transition-all duration-300 hover:shadow-[0_0_40px_rgba(29,114,245,0.12)]">
 
-          <!-- Header row -->
-          <div class="flex items-start justify-between mb-6">
-            <div class="flex items-center gap-4">
-              <!-- Glow Number -->
-              <div class="relative flex-shrink-0">
-                <span class="text-6xl font-black leading-none"
-                      style="font-family: 'Inter', sans-serif; background: linear-gradient(135deg, rgba(37,99,235,0.9), rgba(96,165,250,0.5)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 20px rgba(37,99,235,0.6));">
-                  01
-                </span>
-              </div>
+        <div class="absolute -top-8 -right-8 w-40 h-40 bg-[#4d9fff]/8 rounded-full blur-3xl group-hover:bg-[#4d9fff]/14 transition-all duration-500 pointer-events-none"></div>
+        <div class="absolute top-6 right-7 text-7xl font-black text-[#1d72f5]/10 group-hover:text-[#1d72f5]/18 transition-colors duration-300 leading-none select-none" style="text-shadow:0 0 40px rgba(29,114,245,0.2);">02</div>
+
+        <div class="relative z-10">
+          <div class="w-12 h-12 rounded-xl bg-[#1d72f5]/15 border border-[#1d72f5]/30 flex items-center justify-center mb-5">
+            <span class="iconify text-[#4d9fff] text-2xl" data-icon="ph:instagram-logo-bold"></span>
+          </div>
+          <h3 class="text-xl font-black text-white mb-1">Bio + Link Estratégico</h3>
+          <p class="text-[#4d9fff] text-sm font-semibold mb-5">Visitantes que viram leads</p>
+
+          <div class="space-y-3 mb-6">
+            <div class="flex items-start gap-2.5">
+              <span class="iconify text-[#4d9fff] text-base flex-shrink-0 mt-0.5" data-icon="ph:check-circle-bold"></span>
+              <span class="text-sm text-[#7a9bbf]">Bio focada em imobiliário — especialidade de maior demanda</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="iconify text-[#4d9fff] text-base flex-shrink-0 mt-0.5" data-icon="ph:check-circle-bold"></span>
+              <span class="text-sm text-[#7a9bbf]">Conversão para conta Business/Creator</span>
+            </div>
+            <div class="flex items-start gap-2.5">
+              <span class="iconify text-[#4d9fff] text-base flex-shrink-0
+<!-- ========================================================
+     BANNER CITAÇÃO IMPACTANTE
+     ======================================================== -->
+<div class="relative w-full bg-blue-950/30 border-y border-blue-500/20 py-16 md:py-20 overflow-hidden">
+  <!-- Glow decorativo de fundo -->
+  <div class="absolute inset-0 pointer-events-none">
+    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[200px] bg-blue-500/10 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-5xl mx-auto px-6 md:px-12 text-center">
+    <!-- Aspas decorativas abertura -->
+    <div class="flex justify-center mb-6">
+      <svg class="w-10 h-10 text-blue-500/40" fill="currentColor" viewBox="0 0 32 32">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
+      </svg>
+    </div>
+
+    <!-- Citação principal -->
+    <blockquote>
+      <p class="font-['Manrope'] font-light italic text-2xl md:text-3xl lg:text-4xl xl:text-[2.6rem] leading-snug md:leading-tight text-blue-100 tracking-tight">
+        O mercado imobiliário paulistano movimenta <span class="text-blue-400 font-semibold not-italic">R$ 48 bilhões por ano</span>. Os clientes que precisam de um advogado imobiliário já estão procurando — a única questão é se eles vão te encontrar <span class="text-blue-300 italic">ou ao seu concorrente</span>.
+      </p>
+    </blockquote>
+
+    <!-- Aspas decorativas fechamento -->
+    <div class="flex justify-center mt-6">
+      <svg class="w-10 h-10 text-blue-500/40 rotate-180" fill="currentColor" viewBox="0 0 32 32">
+        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
+      </svg>
+    </div>
+
+    <!-- Linha decorativa -->
+    <div class="mt-8 flex items-center justify-center gap-4">
+      <div class="h-px w-16 bg-gradient-to-r from-transparent to-blue-500/50"></div>
+      <div class="w-1.5 h-1.5 rounded-full bg-blue-400/70"></div>
+      <div class="h-px w-16 bg-gradient-to-l from-transparent to-blue-500/50"></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ========================================================
+     SEÇÃO 06 — INVESTIMENTO
+     ======================================================== -->
+<section id="investimento" class="relative py-24 md:py-32 bg-[#020B18] overflow-hidden">
+
+  <!-- Fundo decorativo -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent"></div>
+    <div class="absolute -top-32 right-1/4 w-[500px] h-[500px] bg-blue-600/5 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-1/3 w-[400px] h-[400px] bg-blue-800/8 rounded-full blur-3xl"></div>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-6 md:px-12">
+
+    <!-- Label da seção -->
+    <div class="flex items-center gap-3 mb-6">
+      <span class="font-['Manrope'] text-xs font-bold tracking-[0.25em] uppercase text-blue-400/80">06 — INVESTIMENTO</span>
+      <div class="flex-1 h-px bg-gradient-to-r from-blue-500/30 to-transparent max-w-xs"></div>
+    </div>
+
+    <!-- Título da seção -->
+    <div class="mb-16 max-w-3xl">
+      <h2 class="font-['Manrope'] font-bold text-3xl md:text-4xl lg:text-5xl text-white leading-tight mb-5">
+        Estrutura completa de captação.<br class="hidden md:block"/>
+        <span class="text-blue-400">Com o que você investe em uma audiência.</span>
+      </h2>
+      <p class="text-blue-200/60 text-lg leading-relaxed">
+        No direito imobiliário em São Paulo, um único cliente novo gerado pela estratégia digital já cobre o investimento total desta proposta. O que estamos construindo tem capacidade de trazer muito mais do que isso.
+      </p>
+    </div>
+
+    <!-- Grid de Cards de Investimento -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+
+      <!-- ─── CARD SETUP — FEATURED ─────────────────────── -->
+      <div class="relative group">
+
+        <!-- Glow externo do card -->
+        <div class="absolute -inset-0.5 bg-gradient-to-br from-blue-500/40 via-blue-600/20 to-blue-900/30 rounded-2xl blur-sm opacity-70 group-hover:opacity-100 transition-opacity duration-500"></div>
+
+        <div class="relative bg-gradient-to-br from-[#0A1628] via-[#071220] to-[#030D1A] border border-blue-500/30 rounded-2xl overflow-hidden shadow-[0_0_60px_rgba(59,130,246,0.12)] group-hover:shadow-[0_0_80px_rgba(59,130,246,0.2)] transition-all duration-500">
+
+          <!-- Topo do card com badge -->
+          <div class="relative px-8 pt-8 pb-6 border-b border-blue-500/15">
+            <!-- Badge Melhor Custo-Benefício -->
+            <div class="inline-flex items-center gap-2 bg-blue-500/15 border border-blue-400/30 rounded-full px-4 py-1.5 mb-6">
+              <svg class="w-3.5 h-3.5 text-blue-300" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <span class="font-['Manrope'] text-xs font-bold tracking-wider uppercase text-blue-300">Melhor Custo-Benefício</span>
+            </div>
+
+            <div class="mb-2">
+              <span class="font-['Manrope'] text-xs font-bold tracking-[0.2em] uppercase text-blue-400/70">Setup Único</span>
+            </div>
+            <h3 class="font-['Manrope'] font-bold text-xl text-white mb-1">Estruturação Completa</h3>
+            <p class="text-blue-200/50 text-sm">Tudo instalado, configurado e pronto para captar clientes nos primeiros 7 dias.</p>
+          </div>
+
+          <!-- Lista de entregáveis -->
+          <div class="px-8 py-6 border-b border-blue-500/10">
+            <ul class="space-y-3.5">
+              <!-- Item -->
+              <li class="flex items-start gap-3">
+                <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-500/15 border border-blue-500/30 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-2.5 h-2.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-white/90 text-sm font-medium">Google Meu Negócio completo</span>
+                  <span class="text-blue-200/40 text-xs block">Criação, otimização, fotos e configuração</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-500/15 border border-blue-500/30 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-2.5 h-2.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-white/90 text-sm font-medium">Landing page de captação</span>
+                  <span class="text-blue-200/40 text-xs block">Design, copy, formulário e integração WhatsApp</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-500/15 border border-blue-500/30 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-2.5 h-2.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-white/90 text-sm font-medium">Pixel + Analytics instalados</span>
+                  <span class="text-blue-200/40 text-xs block">Configuração, testes e eventos de conversão</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-500/15 border border-blue-500/30 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-2.5 h-2.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-white/90 text-sm font-medium">Bio profissional + Link estratégico</span>
+                  <span class="text-blue-200/40 text-xs block">Novo texto, link e conversão para conta Business</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-500/15 border border-blue-500/30 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-2.5 h-2.5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-white/90 text-sm font-medium">Business Manager + Conta de anúncios</span>
+                  <span class="text-blue-200/40 text-xs block">Configuração completa para rodar campanhas</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Preço -->
+          <div class="px-8 py-7">
+            <div class="flex items-end justify-between flex-wrap gap-4">
               <div>
-                <div class="flex items-center gap-2 mb-1">
-                  <iconify-icon icon="ph:map-pin-simple-area-fill" style="color:#3b82f6;" width="22"></iconify-icon>
-                  <span class="text-blue-400 text-xs font-semibold uppercase tracking-widest">Google Meu Negócio</span>
+                <span class="font-['Manrope'] text-xs font-semibold tracking-wider uppercase text-blue-400/60 block mb-1">Investimento único</span>
+                <!-- Preço riscado (placeholder) -->
+                <div class="flex items-center gap-3 mb-1">
+                  <span class="price-slash font-['Manrope'] text-lg text-blue-200/30 line-through decoration-blue-400/50">R$ 4.800</span>
+                  <span class="text-xs text-blue-400/60 bg-blue-500/10 border border-blue-500/20 rounded px-2 py-0.5">Oferta de lançamento</span>
                 </div>
-                <h3 class="text-xl font-bold text-white leading-tight">
-                  Sua vitrine nas buscas locais — sem pagar por anúncio
-                </h3>
+                <!-- Preço principal com glow -->
+                <div class="glow-number font-['Manrope'] font-bold italic text-4xl md:text-5xl text-white leading-none drop-shadow-[0_0_20px_rgba(96,165,250,0.5)]">
+                  R$ 2.900
+                </div>
               </div>
+              <a href="https://calendly.com/marketingavestra/30min"
+                 target="_blank" rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-['Manrope'] font-bold text-sm px-6 py-3.5 rounded-xl transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.35)] hover:shadow-[0_0_30px_rgba(59,130,246,0.55)] group/btn">
+                <span>Quero começar</span>
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
+              </a>
             </div>
           </div>
-
-          <!-- Two columns content -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 flex-1">
-            <div>
-              <p class="text-slate-400 text-sm leading-relaxed mb-4">
-                Quando alguém busca por <em class="text-slate-300 not-italic">"advogado imobiliário"</em> ou <em class="text-slate-300 not-italic">"advogado societário"</em> na sua cidade, você aparece no mapa, com estrelas, botão de ligação direta e avaliações — na primeira página do Google.
-              </p>
-              <ul class="space-y-2.5">
-                <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                  <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6; flex-shrink:0; margin-top:2px;" width="16"></iconify-icon>
-                  Criação e verificação completa do perfil
-                </li>
-                <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                  <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6; flex-shrink:0; margin-top:2px;" width="16"></iconify-icon>
-                  Descrição estratégica com especialidades-chave
-                </li>
-                <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                  <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6; flex-shrink:0; margin-top:2px;" width="16"></iconify-icon>
-                  Upload de fotos profissionais e categorias
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul class="space-y-2.5">
-                <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                  <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6; flex-shrink:0; margin-top:2px;" width="16"></iconify-icon>
-                  Horários, área de atendimento e contato
-                </li>
-                <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                  <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6; flex-shrink:0; margin-top:2px;" width="16"></iconify-icon>
-                  Primeiras postagens para ativar algoritmo local
-                </li>
-                <li class="flex items-start gap-2.5 text-sm text-slate-300">
-                  <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6; flex-shrink:0; margin-top:2px;" width="16"></iconify-icon>
-                  Orientação para captação de avaliações iniciais
-                </li>
-              </ul>
-              <!-- Result Badge -->
-              <div class="mt-6 inline-flex items-center gap-2 px-4 py-2 rounded-xl"
-                   style="background: rgba(34,197,94,0.1); border: 1px solid rgba(34,197,94,0.25);">
-                <iconify-icon icon="ph:trend-up-bold" style="color:#4ade80;" width="16"></iconify-icon>
-                <span class="text-green-400 text-xs font-semibold">Top 3 Google Local em 90 dias</span>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
+      <!-- ─────────────────────────────────────────────────── -->
 
-      <!-- ─── CARD 2 — Instagram Profissional ─── -->
-      <div class="group relative rounded-2xl overflow-hidden border border-slate-800/80 hover:border-blue-500/40 transition-all duration-500"
-           style="background: linear-gradient(135deg, rgba(15,23,42,0.95) 0%, rgba(20,30,55,0.90) 100%); backdrop-filter: blur(16px);">
+      <!-- ─── CARD GESTÃO MENSAL ────────────────────────── -->
+      <div class="relative group">
+        <div class="absolute -inset-0.5 bg-gradient-to-br from-blue-800/20 via-blue-900/10 to-transparent rounded-2xl blur-sm opacity-50 group-hover:opacity-80 transition-opacity duration-500"></div>
 
-        <div class="h-0.5 w-full" style="background: linear-gradient(90deg, #7c3aed, #3b82f6, transparent);"></div>
+        <div class="relative h-full bg-gradient-to-br from-[#081020] to-[#030D1A] border border-blue-500/15 rounded-2xl overflow-hidden group-hover:border-blue-500/30 transition-all duration-500">
 
-        <div class="absolute top-0 right-0 w-48 h-48 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"
-             style="background: radial-gradient(circle, rgba(124,58,237,0.10) 0%, transparent 70%); transform: translate(20%, -20%);">
-        </div>
-
-        <div class="p-7 flex flex-col h-full">
-
-          <div class="mb-5">
-            <span class="text-5xl font-black leading-none block mb-3"
-                  style="font-family: 'Inter', sans-serif; background: linear-gradient(135deg, rgba(124,58,237,0.9), rgba(96,165,250,0.5)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; filter: drop-shadow(0 0 20px rgba(124,58,237,0.5));">
-              02
-            </span>
-            <div class="flex items-center gap-2 mb-1">
-              <iconify-icon icon="ph:instagram-logo-fill" style="color:#a78bfa;" width="20"></iconify-icon>
-              <span class="text-violet-400 text-xs font-semibold uppercase tracking-widest">Instagram Business</span>
+          <!-- Topo -->
+          <div class="px-8 pt-8 pb-6 border-b border-blue-500/10">
+            <div class="mb-2">
+              <span class="font-['Manrope'] text-xs font-bold tracking-[0.2em] uppercase text-blue-400/60">Gestão Mensal</span>
             </div>
-            <h3 class="text-lg font-bold text-white leading-snug">
-              Transformando seguidores em consultas reais
-            </h3>
+            <h3 class="font-['Manrope'] font-bold text-xl text-white mb-1">Presença Contínua & Escala</h3>
+            <p class="text-blue-200/45 text-sm">Você foca em advogar. A gente foca em crescer sua presença e gerar leads todo mês.</p>
           </div>
 
-          <ul class="space-y-2.5 flex-1">
-            <li class="flex items-start gap-2.5 text-sm text-slate-300">
-              <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6; flex-shrink:0; margin-top:2px;" width="15"></iconify-icon>
-              Conversão para conta Business completa
-            </li>
-            <li class="flex items-start gap-2.5 text-sm text-slate-300">
-              <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6; flex-shrink:0; margin-top:2px;" width="15"></iconify-icon>
-              Bio reescrita com especialidade âncora e CTA
-            </li>
-            <li class="flex items-start gap-2.5 text-sm text-slate-300">
-              <iconify-icon icon="ph:check-circle-fill" style="color:#3b82f6; flex-shrink:0; margin-top:2px;" width="15"></iconify-icon>
-<!-- ========================================
-           BANNER CITAÇÃO IMPACTANTE
-      ======================================== -->
-      <div class="w-full bg-blue-950/30 border-y border-blue-500/20 py-16 md:py-20 reveal">
-        <div class="max-w-5xl mx-auto px-6 md:px-12 text-center">
-          <svg class="mx-auto mb-6 w-10 h-10 text-blue-400/50" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+          <!-- Lista -->
+          <div class="px-8 py-6 border-b border-blue-500/8">
+            <ul class="space-y-3.5">
+              <li class="flex items-start gap-3">
+                <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-900/50 border border-blue-600/25 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-2.5 h-2.5 text-blue-400/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-white/80 text-sm font-medium">Gestão de tráfego pago Meta Ads</span>
+                  <span class="text-blue-200/35 text-xs block">Criação, otimização e relatório mensal</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-900/50 border border-blue-600/25 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-2.5 h-2.5 text-blue-400/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-white/80 text-sm font-medium">Gestão e atualização do GMB</span>
+                  <span class="text-blue-200/35 text-xs block">Posts, avaliações e monitoramento</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-900/50 border border-blue-600/25 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-2.5 h-2.5 text-blue-400/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-white/80 text-sm font-medium">Monitoramento de performance</span>
+                  <span class="text-blue-200/35 text-xs block">Analytics, Pixel e conversões em tempo real</span>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <div class="mt-0.5 w-5 h-5 rounded-full bg-blue-900/50 border border-blue-600/25 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-2.5 h-2.5 text-blue-400/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="text-white/80 text-sm font-medium">Relatório mensal executivo</span>
+                  <span class="text-blue-200/35 text-xs block">Indicadores claros, sem jargão de marketing</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Preço -->
+          <div class="px-8 py-7">
+            <span class="font-['Manrope'] text-xs font-semibold tracking-wider uppercase text-blue-400/50 block mb-2">Investimento mensal</span>
+            <div class="font-['Manrope'] font-bold italic text-4xl md:text-5xl text-white/90 leading-none mb-1">
+              R$ 1.500
+            </div>
+            <p class="text-blue-200/35 text-xs mt-3 leading-relaxed">
+              ⚠️ Honorários de gestão. Verba de anúncios (mín. R$ 600/mês) paga diretamente à plataforma pelo cliente.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ─────────────────────────────────────────────────── -->
+
+    </div>
+
+    <!-- Bloco de perspectiva de retorno -->
+    <div class="relative overflow-hidden bg-gradient-to-r from-blue-950/50 via-blue-900/20 to-blue-950/50 border border-blue-500/20 rounded-2xl p-7 md:p-9">
+      <!-- Ícone decorativo -->
+      <div class="absolute right-8 top-1/2 -translate-y-1/2 opacity-5 pointer-events-none hidden md:block">
+        <svg class="w-40 h-40 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
+        </svg>
+      </div>
+
+      <div class="flex items-start gap-4 relative">
+        <div class="w-10 h-10 rounded-xl bg-blue-500/15 border border-blue-400/25 flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z"/>
           </svg>
-          <p class="font-['Manrope'] italic text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed text-blue-300/90 max-w-4xl mx-auto">
-            Você já tem a expertise que os clientes precisam. O que falta é fazer com que eles encontrem você — antes de encontrar outra pessoa.
+        </div>
+        <div>
+          <h4 class="font-['Manrope'] font-bold text-white text-lg mb-2">Perspectiva de retorno</h4>
+          <p class="text-blue-200/60 text-sm leading-relaxed max-w-2xl">
+            No direito imobiliário em São Paulo, um contrato de assessoria em compra e venda gira entre <span class="text-blue-300 font-semibold">R$ 3.000 e R$ 15.000</span>. Um único cliente novo por mês, gerado pela estratégia digital, já justifica o investimento total desta proposta — e a infraestrutura que estamos construindo tem capacidade de trazer muito mais do que isso.
           </p>
-          <div class="mt-8 flex items-center justify-center gap-3">
-            <div class="h-px w-12 bg-blue-500/40"></div>
-            <span class="text-blue-400/60 text-sm tracking-widest uppercase font-medium">Avestra Marketing</span>
-            <div class="h-px w-12 bg-blue-500/40"></div>
-          </div>
         </div>
       </div>
+    </div>
 
-      <!-- ========================================
-           SEÇÃO 06 — INVESTIMENTO
-      ======================================== -->
-      <section id="investimento" class="py-20 md:py-28 px-6 md:px-12 max-w-7xl mx-auto">
+  </div>
+</section>
 
-        <!-- Label da seção -->
-        <div class="reveal mb-14">
-          <div class="flex items-center gap-4 mb-4">
-            <span class="text-blue-400 font-['Manrope'] text-xs tracking-[0.3em] uppercase font-semibold">06 — INVESTIMENTO</span>
-            <div class="h-px flex-1 bg-gradient-to-r from-blue-500/40 to-transparent max-w-xs"></div>
-          </div>
-          <h2 class="font-['Manrope'] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-            Escolha o plano <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">certo para você</span>
-          </h2>
-          <p class="mt-4 text-slate-400 text-lg max-w-2xl">
-            Dois caminhos para transformar sua presença digital. Ambos começam agora.
-          </p>
+
+<!-- ========================================================
+     SEÇÃO 07 — PRÓXIMOS PASSOS / CTA
+     ======================================================== -->
+<section id="cta" class="relative py-24 md:py-36 bg-[#020B18] overflow-hidden">
+
+  <!-- Fundo decorativo premium -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-500/25 to-transparent"></div>
+    <!-- Glow central -->
+    <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-blue-600/6 rounded-full blur-3xl"></div>
+    <!-- Grids decorativos -->
+    <div class="absolute bottom-0 right-0 w-64 h-64 opacity-[0.03]">
+      <div class="grid grid-cols-8 gap-3 w-full h-full">
+        <div class="col-span-8 grid grid-cols-8 gap-3">
+          <div class="h-3 bg-blue-400 rounded-sm"></div><div class="h-3 bg-blue-400 rounded-sm"></div><div class="h-3 bg-blue-400 rounded-sm"></div><div class="h-3 bg-blue-400 rounded-sm"></div><div class="h-3 bg-blue-400 rounded-sm"></div><div class="h-3 bg-blue-400 rounded-sm"></div><div class="h-3 bg-blue-400 rounded-sm"></div><div class="h-3 bg-blue-400 rounded-sm"></div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <!-- Cards de planos -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+  <div class="relative max-w-5xl mx-auto px-6 md:px-12">
 
-          <!-- Plano Fundação -->
-          <div class="reveal relative rounded-2xl border border-blue-500/30 bg-gradient-to-b from-blue-950/40 to-slate-950/60 p-8 md:p-10 shadow-[0_0_40px_rgba(59,130,246,0.08)]">
-            <div class="flex items-center gap-3 mb-2">
-              <div class="w-3 h-3 rounded-full bg-blue-400"></div>
-              <span class="text-blue-300 text-sm font-semibold tracking-wider uppercase">Plano Fundação</span>
-            </div>
-            <p class="text-slate-400 text-sm mb-8 leading-relaxed">
-              Para quem quer estruturar a base com segurança e visibilidade imediata.
-            </p>
-
-            <!-- Preço -->
-            <div class="mb-8">
-              <div class="flex items-baseline gap-3 flex-wrap">
-                <span class="text-slate-500 line-through text-xl font-['Manrope']">R$ 2.800</span>
-                <span class="bg-blue-500/20 text-blue-300 text-xs px-2 py-1 rounded-full font-semibold border border-blue-500/30">Oferta de Lançamento</span>
-              </div>
-              <div class="mt-2 flex items-end gap-2">
-                <span class="font-['Manrope'] italic font-bold text-5xl md:text-6xl text-white" style="text-shadow: 0 0 30px rgba(96,165,250,0.4), 0 0 60px rgba(96,165,250,0.15);">R$ 1.997</span>
-                <span class="text-slate-400 text-base mb-2">taxa única</span>
-              </div>
-            </div>
-
-            <!-- Entregáveis -->
-            <ul class="space-y-3 mb-10">
-              <li class="flex items-start gap-3 text-slate-300 text-sm">
-                <svg class="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Google Meu Negócio — criação, verificação e otimização completa
-              </li>
-              <li class="flex items-start gap-3 text-slate-300 text-sm">
-                <svg class="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Instagram Business — conversão, nova bio estratégica e CTA
-              </li>
-              <li class="flex items-start gap-3 text-slate-300 text-sm">
-                <svg class="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Página de links no domínio próprio com WhatsApp, agenda e site
-              </li>
-              <li class="flex items-start gap-3 text-slate-300 text-sm">
-                <svg class="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Instalação e configuração do Google Analytics 4
-              </li>
-              <li class="flex items-start gap-3 text-slate-300 text-sm">
-                <svg class="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Instalação e verificação do Pixel do Facebook
-              </li>
-              <li class="flex items-start gap-3 text-slate-300 text-sm">
-                <svg class="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Otimização do site com CTAs estratégicos nas páginas principais
-              </li>
-              <li class="flex items-start gap-3 text-slate-300 text-sm">
-                <svg class="w-5 h-5 text-blue-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Relatório final com documentação completa de todos os acessos
-              </li>
-            </ul>
-
-            <a href="https://calendly.com/marketingavestra/30min" target="_blank" rel="noopener noreferrer"
-              class="block w-full text-center py-3.5 px-6 rounded-xl border border-blue-500/40 text-blue-300 font-semibold text-sm tracking-wide hover:bg-blue-500/10 transition-all duration-300">
-              Quero começar com a Fundação
-            </a>
-          </div>
-
-          <!-- Plano Crescimento — FEATURED -->
-          <div class="reveal relative rounded-2xl border border-blue-400/50 bg-gradient-to-b from-blue-900/40 to-slate-900/70 p-8 md:p-10 shadow-[0_0_60px_rgba(59,130,246,0.18),0_0_120px_rgba(59,130,246,0.06)]">
-
-            <!-- Badge Destaque -->
-            <div class="absolute -top-4 left-1/2 -translate-x-1/2">
-              <span class="bg-gradient-to-r from-blue-500 to-blue-400 text-white text-xs font-bold px-5 py-1.5 rounded-full shadow-lg shadow-blue-500/30 tracking-wider uppercase whitespace-nowrap">
-                ⭐ Melhor Custo-Benefício
-              </span>
-            </div>
-
-            <div class="flex items-center gap-3 mb-2 mt-2">
-              <div class="w-3 h-3 rounded-full bg-blue-300"></div>
-              <span class="text-blue-200 text-sm font-semibold tracking-wider uppercase">Plano Crescimento</span>
-            </div>
-            <p class="text-slate-300 text-sm mb-8 leading-relaxed">
-              Para quem quer a base estruturada <strong class="text-white">e</strong> os primeiros resultados em 30 dias, com gestão ativa e campanhas rodando.
-            </p>
-
-            <!-- Preço -->
-            <div class="mb-8">
-              <div class="flex items-baseline gap-3 flex-wrap">
-                <span class="text-slate-500 line-through text-xl font-['Manrope']">R$ 5.200</span>
-                <span class="bg-blue-400/20 text-blue-200 text-xs px-2 py-1 rounded-full font-semibold border border-blue-400/30">Oferta de Lançamento</span>
-              </div>
-              <div class="mt-2 flex items-end gap-2 flex-wrap">
-                <span class="font-['Manrope'] italic font-bold text-5xl md:text-6xl text-white" style="text-shadow: 0 0 40px rgba(96,165,250,0.6), 0 0 80px rgba(96,165,250,0.2);">R$ 3.497</span>
-              </div>
-              <div class="mt-2 flex items-center gap-2 flex-wrap">
-                <span class="text-slate-300 text-sm">implantação única</span>
-                <span class="text-blue-400">+</span>
-                <span class="text-white font-semibold text-sm">R$ 1.297/mês gestão</span>
-              </div>
-            </div>
-
-            <!-- Divisor -->
-            <div class="h-px w-full bg-gradient-to-r from-transparent via-blue-500/30 to-transparent mb-8"></div>
-
-            <!-- Tudo do Fundação + -->
-            <p class="text-blue-300 text-xs font-semibold tracking-widest uppercase mb-4">Tudo do Plano Fundação, mais:</p>
-            <ul class="space-y-3 mb-10">
-              <li class="flex items-start gap-3 text-slate-200 text-sm">
-                <svg class="w-5 h-5 text-blue-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                SEO on-page para as 2 especialidades prioritárias
-              </li>
-              <li class="flex items-start gap-3 text-slate-200 text-sm">
-                <svg class="w-5 h-5 text-blue-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Estruturação completa do gerenciador de anúncios Meta
-              </li>
-              <li class="flex items-start gap-3 text-slate-200 text-sm">
-                <svg class="w-5 h-5 text-blue-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                2 campanhas iniciais no Meta Ads — segmentadas por especialidade
-              </li>
-              <li class="flex items-start gap-3 text-slate-200 text-sm">
-                <svg class="w-5 h-5 text-blue-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Gestão mensal contínua com otimizações semanais
-              </li>
-              <li class="flex items-start gap-3 text-slate-200 text-sm">
-                <svg class="w-5 h-5 text-blue-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Dashboard de performance e relatório mensal detalhado
-              </li>
-              <li class="flex items-start gap-3 text-slate-200 text-sm">
-                <svg class="w-5 h-5 text-blue-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Calendário editorial jurídico para Instagram (D+30)
-              </li>
-              <li class="flex items-start gap-3 text-slate-200 text-sm">
-                <svg class="w-5 h-5 text-blue-300 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                Suporte prioritário via WhatsApp — resposta em até 4h úteis
-              </li>
-            </ul>
-
-            <a href="https://calendly.com/marketingavestra/30min" target="_blank" rel="noopener noreferrer"
-              class="block w-full text-center py-4 px-6 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-bold text-sm tracking-wide transition-all duration-300 shadow-lg shadow-blue-600/30 hover:shadow-blue-500/40">
-              Quero o Plano Crescimento
-            </a>
-
-            <!-- Garantia -->
-            <p class="mt-4 text-center text-slate-400 text-xs">
-              🔒 Sem fidelidade mínima no primeiro mês. Cancele se não ver progresso.
-            </p>
-          </div>
-        </div>
-
-        <!-- Nota sobre verba de anúncios -->
-        <div class="reveal mt-10 rounded-xl border border-slate-700/40 bg-slate-900/40 p-6 flex items-start gap-4">
-          <div class="w-10 h-10 rounded-full bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0">
-            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <div>
-            <p class="text-white font-semibold text-sm mb-1">Sobre a verba de anúncios</p>
-            <p class="text-slate-400 text-sm leading-relaxed">
-              A verba de mídia paga (Meta Ads / Google Ads) é investida diretamente por você nas plataformas — não passa pela Avestra. Recomendamos início entre <strong class="text-slate-300">R$ 600 e R$ 1.200/mês</strong> para testes estruturados com dados reais. Isso garante total transparência sobre cada centavo investido.
-            </p>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- ========================================
-           SEÇÃO 07 — PRÓXIMOS PASSOS / CTA
-      ======================================== -->
-      <section id="cta" class="py-20 md:py-28 px-6 md:px-12 bg-gradient-to-b from-transparent via-blue-950/20 to-transparent">
-        <div class="max-w-5xl mx-auto">
-
-          <!-- Label da seção -->
-          <div class="reveal mb-14 text-center">
-            <div class="flex items-center justify-center gap-4 mb-4">
-              <div class="h-px w-12 bg-gradient-to-r from-transparent to-blue-500/40"></div>
-              <span class="text-blue-400 font-['Manrope'] text-xs tracking-[0.3em] uppercase font-semibold">07 — PRÓXIMOS PASSOS</span>
-              <div class="h-px w-12 bg-gradient-to-l from-transparent to-blue-500/40"></div>
-            </div>
-            <h2 class="font-['Manrope'] text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-              De invisível a referência — <br class="hidden md:block"/>
-              <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">começa aqui</span>
-            </h2>
-          </div>
-
-          <!-- 3 Steps -->
-          <div class="reveal grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-
-            <!-- Step 1 -->
-            <div class="relative text-center">
-              <div class="flex justify-center mb-5">
-                <div class="relative">
-                  <div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 border border-blue-400/40 flex items-center justify-center shadow-lg shadow-blue-600/20">
-                    <span class="font-['Manrope'] font-bold text-2xl text-white">1</span>
-                  </div>
-                  <div class="absolute inset-0 rounded-full bg-blue-400/20 blur-md -z-10"></div>
-                </div>
-              </div>
-              <!-- Connector line (hidden on mobile) -->
-              <div class="hidden md:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-gradient-to-r from-blue-500/40 to-transparent"></div>
-              <h3 class="font-['Manrope'] font-semibold text-white text-lg mb-2">Agende a conversa</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Escolha um horário no calendário abaixo. São 30 minutos estratégicos — sem compromisso, sem pressão. Só clareza sobre o caminho.
-              </p>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="relative text-center">
-              <div class="flex justify-center mb-5">
-                <div class="relative">
-                  <div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 border border-blue-400/40 flex items-center justify-center shadow-lg shadow-blue-600/20">
-                    <span class="font-['Manrope'] font-bold text-2xl text-white">2</span>
-                  </div>
-                  <div class="absolute inset-0 rounded-full bg-blue-400/20 blur-md -z-10"></div>
-                </div>
-              </div>
-              <div class="hidden md:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-gradient-to-r from-blue-500/40 to-transparent"></div>
-              <h3 class="font-['Manrope'] font-semibold text-white text-lg mb-2">Alinhamos o plano</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Na call, revisamos juntos o diagnóstico, ajustamos as prioridades para sua realidade e definimos qual plano faz mais sentido agora.
-              </p>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="relative text-center">
-              <div class="flex justify-center mb-5">
-                <div class="relative">
-                  <div class="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 border border-blue-300/50 flex items-center justify-center shadow-lg shadow-blue-500/30">
-                    <span class="font-['Manrope'] font-bold text-2xl text-white">3</span>
-                  </div>
-                  <div class="absolute inset-0 rounded-full bg-blue-400/30 blur-md -z-10"></div>
-                </div>
-              </div>
-              <h3 class="font-['Manrope'] font-semibold text-white text-lg mb-2">Execução começa</h3>
-              <p class="text-slate-400 text-sm leading-relaxed">
-                Em até 48h após o alinhamento, as primeiras ações da Fase 1 já estão em movimento. Sem burocracia. Sem espera desnecessária.
-              </p>
-            </div>
-
-          </div>
-
-          <!-- Parágrafo motivador -->
-          <div class="reveal text-center max-w-3xl mx-auto">
-            <div class="rounded-2xl border border-blue-500/20 bg-blue-950/30 p-8 md:p-10">
-              <p class="font-['Manrope'] text-slate-200 text-lg md:text-xl leading-relaxed mb-6">
-                Gustavo, a maioria dos advogados que investem em presença digital espera meses antes de ver qualquer resultado — porque começam sem estrutura. Você tem a vantagem de começar <em class="text-blue-300">do jeito certo</em>, com diagnóstico feito, plano na mão e execução imediata.
-              </p>
-              <p class="text-slate-400 text-base leading-relaxed mb-8">
-                Cada dia que passa é mais um dia em que clientes que precisam exatamente do que você oferece estão contratando outra pessoa — não porque ela é melhor, mas porque apareceu primeiro. Isso muda em 7 dias. Mas só se a decisão for tomada agora.
-              </p>
-              <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://calendly.com/marketingavestra/30min" target="_blank" rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center gap-2 py-4 px-8 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-bold text-base tracking-wide transition-all duration-300 shadow-xl shadow-blue-600/30 hover:shadow-blue-500/40 hover:-translate-y-0.5">
-                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-                  Agendar minha sessão estratégica
-                </a>
-                <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Recebi%20a%20proposta%20da%20Avestra%20e%20quero%20conversar." target="_blank" rel="noopener noreferrer"
-                  class="inline-flex items-center justify-center gap-2 py-4 px-8 rounded-xl border border-blue-500/40 text-blue-300 font-semibold text-base tracking-wide hover:bg-blue-500/10 transition-all duration-300">
-                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                  Falar pelo WhatsApp
-                </a>
-              </div>
-              <!-- Urgência sutil -->
-              <p class="mt-6 text-slate-500 text-xs flex items-center justify-center gap-2">
-                <svg class="w-4 h-4 text-amber-500/70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d
+    <!-- Label -->
+    <div class="flex items-center gap-3 mb-
+<section id="agendar" style="padding:80px 24px;text-align:center;background:rgba(80,112,176,0.04);border-top:1px solid rgba(80,112,176,0.15);">
+  <div style="max-width:800px;margin:0 auto;">
+    <p style="font-family:'Manrope',sans-serif;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:#5070b0;margin-bottom:12px;">08 — AGENDAR</p>
+    <h2 style="font-family:'Manrope',sans-serif;font-size:clamp(22px,4vw,32px);font-weight:700;color:#fff;margin-bottom:8px;">Agende sua sessão estratégica gratuita</h2>
+    <p style="font-family:'Manrope',sans-serif;font-size:15px;color:rgba(255,255,255,0.5);margin-bottom:40px;">Sem compromisso. 30 minutos que podem mudar o rumo do seu escritório.</p>
+    <div class="calendly-inline-widget" data-url="https://calendly.com/marketingavestra/30min" style="min-width:320px;height:700px;border-radius:16px;overflow:hidden;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </div>
+</section>
+<footer style="padding:40px 24px;border-top:1px solid rgba(255,255,255,0.05);text-align:center;">
+  <p style="font-family:'Manrope',sans-serif;font-size:12px;color:rgba(255,255,255,0.25);">Gustavo Martinek × Agência Avestra &nbsp;·&nbsp; 29/03/2026 &nbsp;·&nbsp; Proposta confidencial</p>
+</footer>
+<script>
+  const _obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('active'); _obs.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => _obs.observe(el));
+</script>
 </body>
 </html>
